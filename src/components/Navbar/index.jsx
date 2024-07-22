@@ -1,4 +1,4 @@
-import { Box, Button, Flex, IconButton, Image } from "@chakra-ui/react";
+import { Button, Flex, IconButton, Image } from "@chakra-ui/react";
 import {
   GithubLogo,
   InstagramLogo,
