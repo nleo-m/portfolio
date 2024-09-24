@@ -1,14 +1,70 @@
 import { Button, Center, Flex, Heading, Text } from "@chakra-ui/react";
 import SpinningPlanet from "@/components/SpinningPlanet";
+import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
 
 export default function LandingSection() {
+  const { t } = useTranslation();
+
+  const occupations = [
+    t("full_dev"),
+    t("ux_designer"),
+    t("cybersec_enthusiast"),
+    t("artist_designer"),
+    t("tattooer"),
+    t("writer_wannabe"),
+  ];
+
+  const [currentOccupation, setCurrentOccupation] = useState(false);
+  const [occupationRender, setOcuppationRender] = useState("");
+
+  const writeWithDelay = (writable) => {
+    const updateOccupation = () => {
+      index++;
+
+      if (index < writable.length) {
+        setTimeout(updateOccupation, 100);
+
+        setOcuppationRender(
+          (occupationRender) =>
+            occupationRender.replace(" ▮", "") + writable[index] + " ▮"
+        );
+      } else {
+        setTimeout(nextOccupation, 1500);
+      }
+    };
+
+    setOcuppationRender("");
+    let index = -1;
+
+    updateOccupation();
+  };
+
+  const nextOccupation = () => {
+    const currentIndex = occupations.indexOf(currentOccupation);
+    const nextIndex = (currentIndex + 1) % occupations.length;
+
+    setCurrentOccupation(occupations[nextIndex]);
+  };
+
+  useEffect(() => {
+    setTimeout(nextOccupation, 500);
+  }, []);
+
+  useEffect(() => {
+    writeWithDelay(currentOccupation);
+  }, [currentOccupation]);
+
   return (
     <Center mt="80px">
       <Flex align="center" w="70%">
         <Flex direction="column" w="75%" position="relative">
-          <Heading fontSize={48}>Hello world!</Heading>
-          <Heading as="h2" fontSize={54} mb=".75em">
-            I'm a programmer!
+          <Heading fontSize={38} mb="12px">
+            Hello world!
+          </Heading>
+          <Heading as="h2" fontSize={42} mb=".75em">
+            {t("i_am")}
+            {occupationRender}
           </Heading>
           <Text>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
