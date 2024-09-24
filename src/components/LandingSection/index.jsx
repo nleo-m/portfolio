@@ -90,7 +90,7 @@ export default function LandingSection() {
           </Button>
         </Flex>
 
-        <Flex position="absolute" w="50%" h="100%" right={0} zIndex={-1}>
+        <Flex position="absolute" w="50%" h="100%" right={0}>
           <SpinningPlanet />
         </Flex>
       </Flex>
