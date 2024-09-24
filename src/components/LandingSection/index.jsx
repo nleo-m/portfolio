@@ -1,4 +1,5 @@
 import { Button, Center, Flex, Heading, Text } from "@chakra-ui/react";
+import SpinningPlanet from "@/components/SpinningPlanet";
 
 export default function LandingSection() {
   return (
@@ -33,7 +34,9 @@ export default function LandingSection() {
           </Button>
         </Flex>
 
-        <Flex w="50%"></Flex>
+        <Flex position="absolute" w="50%" h="100%" right={0} zIndex={-1}>
+          <SpinningPlanet />
+        </Flex>
       </Flex>
     </Center>
   );

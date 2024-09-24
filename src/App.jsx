@@ -1,5 +1,5 @@
-import LandingSection from "components/LandingSection";
-import Navbar from "./components/Navbar";
+import LandingSection from "@/components/LandingSection";
+import Navbar from "@/components/Navbar";
 import { Flex } from "@chakra-ui/react";
 
 function App() {

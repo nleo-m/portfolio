@@ -7,7 +7,7 @@ import {
   SunDim,
   TrayArrowDown,
 } from "@phosphor-icons/react";
-import SocialButton from "components/SocialButton";
+import SocialButton from "@/components/SocialButton";
 
 export default function Navbar() {
   return (
