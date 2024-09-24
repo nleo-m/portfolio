@@ -58,7 +58,13 @@ export default function LandingSection() {
   return (
     <Center mt="80px">
       <Flex align="center" w="70%">
-        <Flex direction="column" w="75%" position="relative">
+        <Flex
+          direction="column"
+          w="75%"
+          position="relative"
+          gap="2px"
+          zIndex={1}
+        >
           <Heading fontSize={38} mb="12px">
             Hello world!
           </Heading>
@@ -66,27 +72,42 @@ export default function LandingSection() {
             {t("i_am")}
             {occupationRender}
           </Heading>
-          <Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            malesuada massa quis volutpat cursus. In ac cursus nulla. Duis
-            tristique, ante eu auctor finibus, purus ex dapibus turpis, molestie
-            auctor ligula lectus a turpis. Praesent sem lacus, consectetur
-            bibendum quam quis, luctus tempor orci. Praesent dignissim lectus
-            pellentesque odio molestie, quis mollis urna vestibulum. Phasellus
-            at lorem elit. Nulla sagittis vitae est eu auctor. Nunc ut sagittis
-            odio, at tempor quam.{" "}
+          <Text mb="12px">
+            Me chamo Leonel, sou apaixonado por tecnologia e estou sempre
+            buscando aprender algo novo.
           </Text>
+
+          <Text>
+            Atuo como desenvolvedor full-stack há alguns anos e durante esse
+            tempo tive a oportunidade de trabalhar com diversas tecnologias.
+          </Text>
+
+          <Text>
+            Atualmente, venho buscado me aprofudar na área de cybersegurança.
+            Estou fazendo o treinamento SOC1 no TryHackMe e também completei
+            diversos CTFs da Portswigger, colocando em prática o top 10 da OWASP
+            e me familiarizando com técnicas e ferramentas usadas na exploração
+            de vulnerabilidades web, assim como a mitigação e prevenção.
+          </Text>
+
+          <Text mt="12px">
+            Indo um pouco além sou um pai orgulhoso e, no meu tempo livre:
+            artista, tatuador, aspirante a escritor, gamer, entre outras coisas.
+          </Text>
+
+          <Text>Sinta-se à vontade para entrar em contato comigo :{")"}</Text>
 
           <Button
             mt="75px"
             borderRadius="2px"
-            paddingY="25px"
+            paddingY="28px"
+            paddingX="64px"
+            w="fit-content"
             bg="main.green"
-            maxW="250px"
             transition=".1s ease"
             _hover={{ bg: "main.lightGreen" }}
           >
-            Contact me
+            Clique aqui para me mandar uma mensagem
           </Button>
         </Flex>
 
