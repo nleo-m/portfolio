@@ -12,6 +12,10 @@ const theme = extendTheme({
       body: {
         bg: "#181818",
       },
+      a: {
+        color: "main.green",
+        textDecoration: "underline",
+      },
     },
   },
 });

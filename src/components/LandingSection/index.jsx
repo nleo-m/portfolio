@@ -1,4 +1,4 @@
-import { Button, Center, Flex, Heading, Text } from "@chakra-ui/react";
+import { Button, Center, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import SpinningPlanet from "@/components/SpinningPlanet";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
@@ -84,8 +84,18 @@ export default function LandingSection() {
 
           <Text>
             Atualmente, venho buscado me aprofudar na área de cybersegurança.
-            Estou fazendo o treinamento SOC1 no TryHackMe e também completei
-            diversos CTFs da Portswigger, colocando em prática o top 10 da OWASP
+            Estou fazendo o treinamento SOC1 no{" "}
+            <a href="https://tryhackme.com/p/ov33r" _target="blank">
+              TryHackMe
+            </a>{" "}
+            e também completei diversos CTFs da{" "}
+            <a href="https://portswigger.net/" _target="blank">
+              Portswigger
+            </a>
+            , colocando em prática o
+            <a href="https://owasp.org/www-project-top-ten/" _target="blank">
+              top 10 da OWASP
+            </a>{" "}
             e me familiarizando com técnicas e ferramentas usadas na exploração
             de vulnerabilidades web, assim como a mitigação e prevenção.
           </Text>
