@@ -9,6 +9,9 @@ const theme = extendTheme({
     bg: {
       gray: "#181818",
     },
+    terminal: {
+      green: "#4EF531",
+    },
   },
   styles: {
     global: {
