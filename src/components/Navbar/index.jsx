@@ -1,4 +1,4 @@
-import { Box, Button, Flex, IconButton, Image } from "@chakra-ui/react";
+import { Button, Flex, IconButton, Image } from "@chakra-ui/react";
 import {
   GithubLogo,
   InstagramLogo,
@@ -7,7 +7,7 @@ import {
   SunDim,
   TrayArrowDown,
 } from "@phosphor-icons/react";
-import SocialButton from "components/SocialButton";
+import SocialButton from "@/components/SocialButton";
 
 export default function Navbar() {
   return (
