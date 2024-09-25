@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
-import LandingSection from "@/components/LandingSection";
-import TechnicalOverviewSection from "@/components/TechnicalOverviewSection";
+import LandingSection from "@/sections/LandingSection";
+import TechnicalOverviewSection from "@/sections/TechnicalOverviewSection";
 
 import { Flex } from "@chakra-ui/react";
 import Loading from "@/components/Loading";
