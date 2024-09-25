@@ -56,7 +56,7 @@ export default function LandingSection() {
   }, [currentOccupation]);
 
   return (
-    <Center mt="80px">
+    <Center mt="120px">
       <Flex position="relative" align="center" w="80%">
         <Flex
           direction="column"
@@ -91,13 +91,15 @@ export default function LandingSection() {
             e também completei diversos CTFs da{" "}
             <a href="https://portswigger.net/" _target="blank">
               Portswigger
-            </a>
-            , colocando em prática o{" "}
-            <a href="https://owasp.org/www-project-top-ten/" _target="blank">
-              top 10 da OWASP
             </a>{" "}
-            e me familiarizando com técnicas e ferramentas usadas na exploração
-            de vulnerabilidades web, assim como a mitigação e prevenção.
+            me familiarizando com técnicas e ferramentas usadas na exploração de
+            vulnerabilidades web, assim como a mitigação e prevenção.
+          </Text>
+
+          <Text>
+            Desejo desenvolver o conhecimento teórico necessário para atuar na
+            área mas, claro, sempre colocando a mão na massa e testando na
+            prática.
           </Text>
 
           <Text mt="12px">
