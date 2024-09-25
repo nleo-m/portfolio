@@ -129,7 +129,7 @@ const Planet = () => {
 
 export default function SpinningPlanet({ props }) {
   return (
-    <Canvas gl={{ alpha: true, antialias: true }}>
+    <Canvas gl={{ alpha: true, antialias: true }} camera={{ fov: 80 }}>
       <spotLight
         position={[10, 10, 100]}
         angle={1}

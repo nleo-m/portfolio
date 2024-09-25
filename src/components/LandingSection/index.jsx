@@ -57,10 +57,10 @@ export default function LandingSection() {
 
   return (
     <Center mt="80px">
-      <Flex align="center" w="70%">
+      <Flex position="relative" align="center" w="80%">
         <Flex
           direction="column"
-          w="75%"
+          w="80%"
           position="relative"
           gap="2px"
           zIndex={1}
@@ -121,8 +121,21 @@ export default function LandingSection() {
           </Button>
         </Flex>
 
-        <Flex position="absolute" w="50%" h="100%" right={0}>
-          <SpinningPlanet />
+        <Flex
+          position="absolute"
+          w="40%"
+          h="100%"
+          align="center"
+          right={-10}
+          zIndex={1}
+        >
+          <Flex position="absolute" w="620px" h="620px">
+            <SpinningPlanet />
+          </Flex>
+
+          <Text position="absolute" top="5%" right="-24px" color="#B2D5CE">
+            Hack the planet
+          </Text>
         </Flex>
       </Flex>
     </Center>
