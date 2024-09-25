@@ -30,7 +30,7 @@ import {
   TrelloIcon,
   UnityIcon,
   VueIcon,
-} from "../../styles/icons/StackIcons";
+} from "@/styles/icons/StackIcons";
 
 export const techStack = [
   {
