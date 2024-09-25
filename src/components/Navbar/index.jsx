@@ -18,7 +18,9 @@ export default function Navbar() {
       align="center"
       paddingX="10%"
       backdropBlur="10px"
-      position="sticky"
+      position="fixed"
+      backdropFilter="blur(4px)"
+      zIndex={99}
     >
       <Flex gap="1em">
         <SocialButton url="https://github.com/nleo-m" icon={GithubLogo} />

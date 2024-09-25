@@ -6,11 +6,14 @@ const theme = extendTheme({
       green: "#00ED6D",
       lightGreen: "#12FC73",
     },
+    bg: {
+      gray: "#181818",
+    },
   },
   styles: {
     global: {
       body: {
-        bg: "#181818",
+        bg: "bg.gray",
       },
       a: {
         color: "main.green",
