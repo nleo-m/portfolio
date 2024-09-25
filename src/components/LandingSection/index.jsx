@@ -92,7 +92,7 @@ export default function LandingSection() {
             <a href="https://portswigger.net/" _target="blank">
               Portswigger
             </a>
-            , colocando em prática o
+            , colocando em prática o{" "}
             <a href="https://owasp.org/www-project-top-ten/" _target="blank">
               top 10 da OWASP
             </a>{" "}
