@@ -5,6 +5,7 @@ const theme = extendTheme({
     main: {
       green: "#00ED6D",
       lightGreen: "#12FC73",
+      gray: "#1B241B",
     },
     bg: {
       gray: "#181818",
