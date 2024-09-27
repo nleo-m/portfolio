@@ -17,8 +17,19 @@ import CustomTabs from "@/components/CustomTabs";
 
 import { useTranslation } from "react-i18next";
 
+import ExperienceCollection from "@/components/ExperienceCollection";
+
 export default function ExperienceSection() {
   const { t } = useTranslation();
+
+  const testExp = {
+    institution: "Centro universitário FMU",
+    position: "Desenvolvedor full-stack",
+    description: "lorem ipsum",
+    startDate: "04/2024",
+    endDate: "present",
+    tags: ["react", "node", "GCP"],
+  };
 
   return (
     <Center mt="100px">
@@ -44,9 +55,15 @@ export default function ExperienceSection() {
 
         <CustomTabs
           data={[
-            { name: "Profissional", panel: <div>prof</div> },
-            { name: "Acadêmica", panel: <div>prof</div> },
-            { name: "complementar", panel: <div>prof</div> },
+            { name: "Profissional", panel: <ExperienceCollection /> },
+            {
+              name: "Acadêmica",
+              panel: <ExperienceCollection type="academic" />,
+            },
+            {
+              name: "complementar",
+              panel: <ExperienceCollection type="complementary" />,
+            },
           ]}
         />
       </Flex>

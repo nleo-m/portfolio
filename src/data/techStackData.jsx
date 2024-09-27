@@ -32,7 +32,7 @@ import {
   VueIcon,
 } from "@/styles/icons/StackIcons";
 
-export const techStack = [
+export const techStackData = [
   {
     title: "tech_stack",
     items: [
