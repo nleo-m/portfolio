@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import LandingSection from "@/sections/LandingSection";
 import TechnicalOverviewSection from "@/sections/TechnicalOverviewSection";
 
-import { Flex } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import Loading from "@/components/Loading";
 import { motion } from "framer-motion";
 import ExperienceSection from "@/sections/ExperienceSection";
@@ -29,6 +29,8 @@ function App() {
       <LandingSection />
       <TechnicalOverviewSection />
       <ExperienceSection />
+
+      <Box mt="480px" />
     </Flex>
   );
 }

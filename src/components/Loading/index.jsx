@@ -122,7 +122,7 @@ function PopCode() {
     >
       {lines.map((line, index) => (
         <Text
-          color="#DB3E39"
+          color="#DB3E39a"
           fontFamily="monospace"
           as={motion.div}
           key={index}

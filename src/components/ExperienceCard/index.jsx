@@ -1,5 +1,10 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
+
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+
+const MotionBox = motion(Box);
 
 export default function ExperienceCard({
   institution,
@@ -12,15 +17,29 @@ export default function ExperienceCard({
 }) {
   const { t } = useTranslation();
 
+  const ref = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start center", "center center"],
+  });
+
+  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
+
+  const posX = useTransform(scrollYProgress, [0, 1], [-50, 0]);
+
   return (
-    <Flex
-      direction="column"
-      bg={odd ? "#121212" : "#202020"}
+    <MotionBox
+      ref={ref}
+      display="flex"
+      flexDirection="column"
+      bg={odd % 2 === 0 ? "#161616" : "#202020"}
       padding="1.25em 1.5em"
       borderLeft="4px solid"
       borderColor="terminal.green"
       justify="center"
       minH="175px"
+      style={{ opacity: opacity, x: posX }}
       gap=".25em"
     >
       <Flex justify="space-between" fontSize={18}>
@@ -43,6 +62,6 @@ export default function ExperienceCard({
           </Text>
         ))}
       </Flex>
-    </Flex>
+    </MotionBox>
   );
 }
