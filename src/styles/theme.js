@@ -12,6 +12,7 @@ const theme = extendTheme({
     },
     terminal: {
       green: "#4EF531",
+      red: "#DB3E39",
     },
   },
   styles: {
