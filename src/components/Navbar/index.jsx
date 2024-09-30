@@ -23,15 +23,21 @@ export default function Navbar() {
       zIndex={99}
     >
       <Flex gap="1em">
-        <SocialButton url="https://github.com/nleo-m" icon={GithubLogo} />
+        <SocialButton
+          url="https://github.com/nleo-m"
+          icon={<GithubLogo size={28} weight="fill" />}
+        />
         <SocialButton
           url="https://www.linkedin.com/in/leonel-marcos-f5/"
-          icon={LinkedinLogo}
+          icon={<LinkedinLogo size={28} weight="fill" />}
         />
-        <SocialButton url="https://medium.com/@leonel-m" icon={MediumLogo} />
+        <SocialButton
+          url="https://medium.com/@leonel-m"
+          icon={<MediumLogo size={28} weight="fill" />}
+        />
         <SocialButton
           url="https://www.instagram.com/l30nel.exe/"
-          icon={InstagramLogo}
+          icon={<InstagramLogo size={28} weight="fill" />}
         />
       </Flex>
 
