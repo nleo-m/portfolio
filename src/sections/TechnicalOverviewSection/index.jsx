@@ -15,7 +15,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { techStackData } from "@/data/techStackData";
 import { useTranslation } from "react-i18next";
-import "./slider.css";
+
+import "@/styles/css/slider.css";
 
 export default function TechnicalOverviewSection() {
   const { t } = useTranslation();

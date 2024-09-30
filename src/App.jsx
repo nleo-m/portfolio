@@ -7,6 +7,7 @@ import { Box, Flex } from "@chakra-ui/react";
 import Loading from "@/components/Loading";
 import { motion } from "framer-motion";
 import ExperienceSection from "@/sections/ExperienceSection";
+import ProjectsSection from "@/sections/ProjectsSection";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -29,6 +30,7 @@ function App() {
       <LandingSection />
       <TechnicalOverviewSection />
       <ExperienceSection />
+      <ProjectsSection />
 
       <Box mt="480px" />
     </Flex>

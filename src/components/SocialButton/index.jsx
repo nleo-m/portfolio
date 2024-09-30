@@ -15,11 +15,7 @@ export default function SocialButton({ url = "", icon = <></>, props }) {
         _hover={{ transform: "scale(1.1)" }}
         {...props}
       >
-        {React.createElement(icon, {
-          weight: "fill",
-          color: "white",
-          size: 28,
-        }) || null}
+        {icon}
       </Flex>
     </Link>
   );
