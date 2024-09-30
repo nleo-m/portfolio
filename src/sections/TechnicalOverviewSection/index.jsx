@@ -13,7 +13,7 @@ import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { techStack } from "@/enums/techStack";
+import { techStackData } from "@/data/techStackData";
 import { useTranslation } from "react-i18next";
 import "./slider.css";
 
@@ -107,7 +107,7 @@ export default function TechnicalOverviewSection() {
         </Text>
 
         <Flex direction="column">
-          {techStack?.map((category) => (
+          {techStackData?.map((category) => (
             <>
               <Text fontSize="21px" marginY="24px">
                 {t(category?.title)}
