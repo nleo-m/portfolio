@@ -8,6 +8,7 @@ import Loading from "@/components/Loading";
 import { motion } from "framer-motion";
 import ExperienceSection from "@/sections/ExperienceSection";
 import ProjectsSection from "@/sections/ProjectsSection";
+import ContactSection from "@/sections/ContactSection";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -31,6 +32,7 @@ function App() {
       <TechnicalOverviewSection />
       <ExperienceSection />
       <ProjectsSection />
+      <ContactSection />
 
       <Box mt="480px" />
     </Flex>
