@@ -1,13 +1,8 @@
 import * as THREE from "three";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { AsciiRenderer } from "@react-three/drei";
-import {
-  Bloom,
-  EffectComposer,
-  Glitch,
-  Noise,
-} from "@react-three/postprocessing";
+import { Bloom, EffectComposer, Noise } from "@react-three/postprocessing";
 
 const Planet = () => {
   const texture = new THREE.TextureLoader().load("/textures/bw-globe.jpg");
@@ -85,10 +80,6 @@ const Planet = () => {
     positionAttr.needsUpdate = true;
   });
 
-  useEffect(() => {
-    console.log(interpolationFactor.current);
-  }, [interpolationFactor]);
-
   return (
     <mesh
       ref={meshRef}
@@ -102,14 +93,13 @@ const Planet = () => {
         metalness={1}
         map={texture}
         alphaMap={aoMap}
-        flatShading
       />
 
       <AsciiRenderer
         invert={false}
         bgColor="transparent"
         fgColor={inverted ? "#FA2120" : "#4EF531"}
-        resolution={0.18}
+        resolution={0.15}
       />
 
       <EffectComposer>
@@ -129,7 +119,10 @@ const Planet = () => {
 
 export default function SpinningPlanet({ props }) {
   return (
-    <Canvas gl={{ alpha: true, antialias: true }} camera={{ fov: 80 }}>
+    <Canvas
+      gl={{ alpha: true, powerPreference: "high-performance" }}
+      camera={{ fov: 80 }}
+    >
       <spotLight
         position={[10, 10, 100]}
         angle={1}

@@ -26,6 +26,7 @@
     "react-i18next": "^15.0.2",
     "react-scripts": "5.0.1",
     "slick-carousel": "^1.8.1",
+    "stats.js": "^0.17.0",
     "web-vitals": "^2.1.4",
     "yup": "^1.4.0"
   },

@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import ExperienceSection from "@/sections/ExperienceSection";
 import ProjectsSection from "@/sections/ProjectsSection";
 import ContactSection from "@/sections/ContactSection";
+import StatsMonitor from "@/components/StatsMonitor";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -27,6 +28,7 @@ function App() {
       initial={{ opacity: 0, y: 10 }} // Starts off screen
       animate={{ opacity: 1, y: 0 }}
     >
+      {/* <StatsMonitor /> */}
       <Navbar />
       <LandingSection />
       <TechnicalOverviewSection />
