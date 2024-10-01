@@ -9,6 +9,8 @@ import { motion } from "framer-motion";
 import ExperienceSection from "@/sections/ExperienceSection";
 import ProjectsSection from "@/sections/ProjectsSection";
 import ContactSection from "@/sections/ContactSection";
+import Footer from "@/components/Footer";
+
 import StatsMonitor from "@/components/StatsMonitor";
 
 function App() {
@@ -35,8 +37,7 @@ function App() {
       <ExperienceSection />
       <ProjectsSection />
       <ContactSection />
-
-      <Box mt="480px" />
+      <Footer />
     </Flex>
   );
 }
