@@ -74,7 +74,7 @@ export default function LandingSection() {
       <Flex position="relative" align="center" w="80%">
         <Flex
           direction="column"
-          w={"80%"}
+          w={{ base: "100%", md: "80%" }}
           position="relative"
           gap="2px"
           zIndex={1}
@@ -104,22 +104,22 @@ export default function LandingSection() {
 
           <Text>
             Atualmente, venho buscado me aprofudar na área de cybersegurança.
-            Estou fazendo o treinamento SOC1 no{" "}
+            Estou fazendo treinamentos no{" "}
             <a href="https://tryhackme.com/p/ov33r" _target="blank">
               TryHackMe
             </a>{" "}
-            e também completei diversos CTFs da{" "}
+            e{" "}
             <a href="https://portswigger.net/" _target="blank">
               Portswigger
-            </a>{" "}
-            me familiarizando com técnicas e ferramentas usadas na exploração de
-            vulnerabilidades web, assim como a mitigação e prevenção.
+            </a>
+            {isMobile && "."}
+            {!isMobile &&
+              " me familiarizando com técnicas e ferramentas usadas na exploração de vulnerabilidades web, assim como a mitigação e prevenção."}
           </Text>
 
           <Text>
-            Desejo desenvolver o conhecimento teórico necessário para atuar na
-            área mas, claro, sempre colocando a mão na massa e testando na
-            prática.
+            Desejo desenvolver o conhecimento prático e teórico necessário para
+            atuar na área.
           </Text>
 
           <Text mt="12px">
@@ -127,7 +127,9 @@ export default function LandingSection() {
             artista, tatuador, aspirante a escritor, gamer, entre outras coisas.
           </Text>
 
-          <Text>Sinta-se à vontade para entrar em contato comigo :{")"}</Text>
+          <Text mt="12px">
+            Sinta-se à vontade para entrar em contato comigo :{")"}
+          </Text>
 
           <Button
             mt={{ base: "32px", md: "64px" }}
