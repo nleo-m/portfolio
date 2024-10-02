@@ -2,6 +2,7 @@ import { Button, Center, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import SpinningPlanet from "@/components/SpinningPlanet";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
+import { scrollToAnchor } from "@/utils/scrollToAnchor";
 
 export default function LandingSection() {
   const { t } = useTranslation();
@@ -118,6 +119,7 @@ export default function LandingSection() {
             bg="main.green"
             transition=".1s ease"
             _hover={{ bg: "main.lightGreen" }}
+            onClick={() => scrollToAnchor("contact")}
           >
             Clique aqui para me mandar uma mensagem
           </Button>

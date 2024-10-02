@@ -87,7 +87,7 @@ export default function ContactSection() {
   };
 
   return (
-    <Center mt="100px">
+    <Center id="contact" mt="100px">
       <Flex direction="column" w="80%">
         <Box position="relative" mb="64px">
           <Divider />
