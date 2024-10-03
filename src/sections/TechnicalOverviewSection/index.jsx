@@ -20,6 +20,8 @@ import "@/styles/css/slider.css";
 
 import TerminalTextContainer from "@/components/TerminalTextContainer";
 
+import SectionTitle from "@/components/SectionTitle";
+
 export default function TechnicalOverviewSection() {
   const { t } = useTranslation();
 
@@ -68,20 +70,7 @@ export default function TechnicalOverviewSection() {
   return (
     <Center mt="100px">
       <Flex direction="column" w="80%">
-        <Box position="relative" mb={{ base: "42px", sm: "64px" }}>
-          <Divider />
-          <AbsoluteCenter px="4">
-            <Heading
-              background="bg.gray"
-              px={{ base: 4, sm: 8 }}
-              whiteSpace={"nowrap"}
-              fontSize={{ base: 26, sm: 30 }}
-            >
-              {" "}
-              Tech overview
-            </Heading>
-          </AbsoluteCenter>
-        </Box>
+        <SectionTitle>Tech overview</SectionTitle>
 
         <TerminalTextContainer paragraphs={p} />
 
