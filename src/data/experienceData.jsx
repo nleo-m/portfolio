@@ -2,7 +2,8 @@ export const professionalExperienceData = [
   {
     position: "full_dev",
     institution: "Health ID",
-    description: "",
+    description:
+      "Implementação de features, resolução de bugs e manutenção do código utilizando os conceitos para obter um código limpo. Também auxiliava em questões de UI e UX.",
     startDate: "05/2021",
     endDate: " 02/2024",
     tags: [],
