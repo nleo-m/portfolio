@@ -21,6 +21,7 @@ import * as yup from "yup";
 import emailjs from "@emailjs/browser";
 
 import CustomToast from "@/components/CustomToast";
+import SectionTitle from "@/components/SectionTitle";
 
 export default function ContactSection() {
   const validationSchema = yup.object().shape({
@@ -89,14 +90,7 @@ export default function ContactSection() {
   return (
     <Center id="contact" mt="100px">
       <Flex direction="column" w="80%">
-        <Box position="relative" mb="64px">
-          <Divider />
-          <AbsoluteCenter px="4">
-            <Heading background="bg.gray" px={8}>
-              Entre em contato :{")"}
-            </Heading>
-          </AbsoluteCenter>
-        </Box>
+        <SectionTitle>Entre em contato :{")"}</SectionTitle>
 
         <form onSubmit={handleSubmit(onSubmit)}>
           <Flex direction="column" gap="12px">
@@ -169,9 +163,9 @@ export default function ContactSection() {
             <Button
               type="submit"
               mt="18px"
-              maxW="fit-content"
+              w={{ base: "100%", md: "fit-content" }}
               padding="5px 75px"
-              bg="terminal.green"
+              bg="main.green"
               alignSelf="center"
             >
               Enviar

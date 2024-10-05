@@ -32,7 +32,7 @@ export default function ProjectCard({
   return (
     <Card
       bg="#202020"
-      w={{ base: "300px", sm: "480px", md: "300px", lg: "480px" }}
+      w={{ base: "270px", sm: "480px", md: "300px", lg: "480px" }}
       h="520px"
       color="white"
       cursor="pointer"
