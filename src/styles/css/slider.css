@@ -1,5 +1,46 @@
 /* the parent */
-.slick-list {
+.tech-stack .slick-list {
   padding: 25px;
   margin: 0 25px;
+}
+
+.projects .slick-list {
+  padding: 64px 24px !important;
+  overflow-y: visible;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.projects .slick-slide {
+  filter: brightness(0.7);
+  opacity: 0.9;
+}
+
+.projects .slick-active {
+  filter: brightness(0.8);
+  opacity: 1;
+}
+
+.projects .slick-center {
+  transform: translate(0px, -12px);
+  transition: 0.5s ease;
+  filter: brightness(1.025);
+  opacity: 1;
+  z-index: 99;
+}
+
+.projects .slick-center .chakra-card {
+  box-shadow: 0 10px 24px 4px #000000cc;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-color: #4ef531;
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 480px) {
+  .slick-track {
+    padding-right: 18px;
+  }
 }

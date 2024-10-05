@@ -85,7 +85,7 @@ export default function TechnicalOverviewSection() {
                 {t(category?.title)}
               </Text>
 
-              <Slider {...settings}>
+              <Slider className="tech-stack" {...settings}>
                 {category.items.map((i) => (
                   <Tooltip openDelay={550} label={i?.name}>
                     <a target="blank" href={i?.url}>
