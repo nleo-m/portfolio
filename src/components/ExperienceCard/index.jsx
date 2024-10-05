@@ -34,7 +34,7 @@ export default function ExperienceCard({
       display="flex"
       flexDirection="column"
       bg={odd % 2 === 0 ? "#161616" : "#202020"}
-      padding="1.25em 1.5em"
+      padding={{ base: ".75em 1em", sm: "1.25em 1.5em" }}
       borderLeft="4px solid"
       borderColor="terminal.green"
       justify="center"
@@ -42,9 +42,13 @@ export default function ExperienceCard({
       style={{ opacity: opacity, x: posX }}
       gap=".25em"
     >
-      <Flex justify="space-between" fontSize={18}>
+      <Flex
+        align="center"
+        justify="space-between"
+        fontSize={{ base: 16, md: 18 }}
+      >
         <Text>{institution}</Text>
-        <Text>
+        <Text fontSize={{ base: 14, sm: 16, md: 18 }} color="gray.200">
           {startDate} - {endDate}
         </Text>
       </Flex>

@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import LandingSection from "@/sections/LandingSection";
 import TechnicalOverviewSection from "@/sections/TechnicalOverviewSection";
 
-import { Box, Flex } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import Loading from "@/components/Loading";
 import { motion } from "framer-motion";
 import ExperienceSection from "@/sections/ExperienceSection";
@@ -12,6 +12,8 @@ import ContactSection from "@/sections/ContactSection";
 import Footer from "@/components/Footer";
 
 import StatsMonitor from "@/components/StatsMonitor";
+
+import "@/styles/css/globals.css";
 
 function App() {
   const [loading, setLoading] = useState(true);

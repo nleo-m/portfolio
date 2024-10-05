@@ -32,18 +32,21 @@ export default function ProjectCard({
   return (
     <Card
       bg="#202020"
-      w={{ base: "230px", sm: "260px", md: "480px" }}
+      w={{ base: "270px", sm: "480px", md: "300px", lg: "480px" }}
       h="520px"
       color="white"
       cursor="pointer"
       transition=".25s ease"
       border="none"
       borderColor="terminal.green"
+      boxShadow="0 4px 12px 4px #00000025"
+      padding={{ base: ".25em", md: "1em" }}
       _hover={{
-        transform: "scale(1.05)",
+        transform: "scale(1.025)",
         borderTop: "2px solid",
         borderBottom: "2px solid",
         borderColor: "terminal.green",
+        boxShadow: "0 10px 24px 8px #00000050",
       }}
     >
       <CardBody>
@@ -80,16 +83,15 @@ export default function ProjectCard({
         <Flex direction="column" gap="10px">
           <Text>{t(description)}</Text>
         </Flex>
-      </CardBody>
-      <CardFooter>
-        <Flex mt="24px" gap="1em" flexWrap="wrap">
+
+        <Flex mt="24px" gap={{ base: ".75em", sm: "1em" }} overflow="scroll">
           {tags?.map((t) => (
-            <Text fontSize={13} padding="4px 18px" bg="black">
+            <Text bg="black" padding="4px" fontSize={13} whiteSpace="nowrap">
               {t}
             </Text>
           ))}
         </Flex>
-      </CardFooter>
+      </CardBody>
     </Card>
   );
 }

@@ -18,6 +18,7 @@ import { useTranslation } from "react-i18next";
 import "@/styles/css/slider.css";
 import { projectsData } from "@/data/projectsData";
 import ProjectCard from "@/components/ProjectCard";
+import SectionTitle from "@/components/SectionTitle";
 
 export default function ProjectsSection() {
   const { t } = useTranslation();
@@ -28,23 +29,21 @@ export default function ProjectsSection() {
     autoplaySpeed: 4000,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
-    centerMode: false,
+    // autoplay: true,
+    centerMode: true,
+    centerPadding: 0,
     focusOnSelect: true,
     responsive: [
       {
-        breakpoint: 1600,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
-          centerMode: true,
         },
       },
       {
-        breakpoint: 1024,
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
         },
       },
     ],
@@ -53,19 +52,9 @@ export default function ProjectsSection() {
   return (
     <Center mt="100px">
       <Flex direction="column" w="80%">
-        <Flex w="full" position="relative" mb="32px" align="end" justify="end">
-          <Heading
-            w="fit-content"
-            background="bg.gray"
-            paddingLeft={8}
-            zIndex={1}
-          >
-            Alguns projetos
-          </Heading>
-          <Divider position="absolute" top="50%" zIndex={0} />
-        </Flex>
+        <SectionTitle align="end">Alguns projetos</SectionTitle>
 
-        <Slider {...settings}>
+        <Slider className="projects" {...settings}>
           {projectsData.map((p) => (
             <ProjectCard {...p} />
           ))}

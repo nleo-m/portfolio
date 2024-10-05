@@ -18,6 +18,7 @@ import CustomTabs from "@/components/CustomTabs";
 import { useTranslation } from "react-i18next";
 
 import ExperienceCollection from "@/components/ExperienceCollection";
+import SectionTitle from "@/components/SectionTitle";
 
 export default function ExperienceSection() {
   const { t } = useTranslation();
@@ -34,24 +35,7 @@ export default function ExperienceSection() {
   return (
     <Center mt="100px">
       <Flex direction="column" w="80%">
-        <Box
-          display="flex"
-          position="relative"
-          mb="32px"
-          align="center"
-          justify="center"
-          textAlign="start"
-        >
-          <Heading
-            w="fit-content"
-            background="bg.gray"
-            paddingRight={8}
-            zIndex={1}
-          >
-            Experiência
-          </Heading>
-          <Divider position="absolute" top="50%" zIndex={0} />
-        </Box>
+        <SectionTitle align="end">Experiência</SectionTitle>
 
         <CustomTabs
           data={[
