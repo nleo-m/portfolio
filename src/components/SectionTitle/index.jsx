@@ -16,6 +16,7 @@ export default function SectionTitle({ children, align = "center" }) {
         }
         fontSize={{ base: 26, sm: 30 }}
         zIndex={1}
+        color="main.green"
       >
         {children}
       </Heading>

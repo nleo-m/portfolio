@@ -15,6 +15,11 @@ const theme = extendTheme({
       red: "#DB3E39",
     },
   },
+  fonts: {
+    body: `"Roboto Mono", monospace, sans-serif`,
+    heading: `"Roboto Mono", monospace, sans-serif`,
+  },
+
   styles: {
     global: {
       body: {
@@ -23,6 +28,7 @@ const theme = extendTheme({
       a: {
         color: "main.green",
         textDecoration: "underline",
+        zIndex: 99,
       },
     },
   },

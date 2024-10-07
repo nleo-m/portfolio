@@ -3,7 +3,6 @@ import {
   Center,
   Flex,
   Heading,
-  Link,
   Text,
   useMediaQuery,
 } from "@chakra-ui/react";
@@ -77,9 +76,12 @@ export default function LandingSection() {
           w={{ base: "100%", md: "80%" }}
           position="relative"
           gap="2px"
-          zIndex={1}
         >
-          <Heading fontSize={{ base: 18, md: 32, lg: 38 }} mb="12px">
+          <Heading
+            fontSize={{ base: 18, md: 32, lg: 38 }}
+            mb="12px"
+            color="main.green"
+          >
             Hello world!
           </Heading>
           <Heading
@@ -109,7 +111,11 @@ export default function LandingSection() {
               TryHackMe
             </a>{" "}
             e{" "}
-            <a href="https://portswigger.net/" _target="blank">
+            <a
+              href="https://portswigger.net/"
+              _target="blank"
+              style={{ color: "orange" }}
+            >
               Portswigger
             </a>
             {isMobile && "."}
