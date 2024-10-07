@@ -119,10 +119,11 @@ function PopCode() {
       left={10}
       overflow="hidden"
       maxH="90%"
+      maxW="80%"
     >
       {lines.map((line, index) => (
         <Text
-          color="#DB3E39a"
+          color="terminal.red"
           fontFamily="monospace"
           as={motion.div}
           key={index}
@@ -140,7 +141,7 @@ function PopCode() {
 
 export default function Loading() {
   const prompts = [
-    "Scanning network for vulnerabilities",
+    "Scanning for vulnerabilities",
     "Bundling malware",
     "Delivering payload to target",
     "Installing backdoor",
@@ -174,15 +175,24 @@ export default function Loading() {
         boxShadow="-5px 7px 4px 4px #00000050"
         zIndex={1}
       >
-        <Text fontSize={36} color="terminal.green">
+        <Text fontSize={{ base: 32, sm: 34, md: 36 }} color="terminal.green">
           Hacking...
         </Text>
 
-        <Text fontSize={18} color="terminal.green" mb="32px">
+        <Text
+          fontSize={{ base: 14, sm: 16, md: 18 }}
+          color="terminal.green"
+          mb="32px"
+          maxW="100%"
+        >
           {prompts?.[currPrompt]}
         </Text>
 
-        <Box position="relative" width="512px" h="28px">
+        <Box
+          position="relative"
+          width={{ base: "256px", md: "512px" }}
+          h="28px"
+        >
           <ScaleToRightBox
             transitionTime="2.5s"
             widthScale="100%"

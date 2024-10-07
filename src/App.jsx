@@ -33,13 +33,20 @@ function App() {
       animate={{ opacity: 1, y: 0 }}
     >
       {/* <StatsMonitor /> */}
-      <Navbar />
-      <LandingSection />
-      <TechnicalOverviewSection />
-      <ExperienceSection />
-      <ProjectsSection />
-      <ContactSection />
-      <Footer />
+
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <Navbar />
+          <LandingSection />
+          <TechnicalOverviewSection />
+          <ExperienceSection />
+          <ProjectsSection />
+          <ContactSection />
+          <Footer />
+        </>
+      )}
     </Flex>
   );
 }
