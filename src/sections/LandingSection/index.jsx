@@ -72,7 +72,7 @@ export default function LandingSection() {
       <Flex position="relative" align="center" w="80%">
         <Flex
           direction="column"
-          w={{ base: "100%", md: "80%" }}
+          w={{ base: "100%", md: "78%" }}
           position="relative"
           gap="2px"
         >
@@ -106,7 +106,11 @@ export default function LandingSection() {
           <Text>
             Atualmente, venho buscado me aprofudar na área de cybersegurança.
             Estou fazendo treinamentos no{" "}
-            <a href="https://tryhackme.com/p/ov33r" _target="blank">
+            <a
+              href="https://tryhackme.com/p/ov33r"
+              _target="blank"
+              style={{ color: "#007bff" }}
+            >
               TryHackMe
             </a>{" "}
             e{" "}
