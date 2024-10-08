@@ -43,5 +43,15 @@
   "name": "Nome",
   "subject": "Assunto",
   "message": "Mensagem",
-  "send": "Enviar"
+  "send": "Enviar",
+  "and": "e",
+
+  "landing1": "Me chamo Leonel, sou apaixonado por tecnologia e estou sempre buscando aprender algo novo.",
+  "landing2": "Atuo como desenvolvedor full-stack há alguns anos e durante esse tempo tive a oportunidade de trabalhar com diversas tecnologias.",
+  "landing3": "Atualmente, venho buscado me aprofudar na área de cybersegurança. Estou fazendo treinamentos no",
+  "landing4": "me familiarizando com técnicas e ferramentas usadas na exploração de vulnerabilidades web, assim como a mitigação e prevenção.",
+  "landing5": "Desejo desenvolver o conhecimento prático e teórico necessário para atuar na área.",
+  "landing6": "Indo um pouco além sou um pai orgulhoso e, no meu tempo livre: artista, tatuador, aspirante a escritor, gamer, entre outras coisas.",
+  "landing7": "Sinta-se à vontade para entrar em contato comigo",
+  "get_contact": "Entre em contato"
 }

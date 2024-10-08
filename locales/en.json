@@ -43,5 +43,15 @@
   "name": "Name",
   "subject": "Subject",
   "message": "Message",
-  "send": "Send"
+  "send": "Send",
+  "and": "and",
+
+  "landing1": "My name is Leonel, I'm passionate about tech and always looking for something new to learn.",
+  "landing2": "I work as a full-stack dev for a few years now and during this time I had the opportunity to work with a lot of tech and languages.",
+  "landing3": "Lately I'm diving into cybersecurity and been doing a lot of training in",
+  "landing4": "familiarizing with the techniques and tools used to explore web vulnerabilities, as well as mitigations and preventions.",
+  "landing5": "I want to develop the practical and theoretical knowledge necessary to work into this field.",
+  "landing6": "Going a little further, I am a proud father and, in my free time: artist, tattoo artist, writer wannabe, gamer, among other things.",
+  "landing7": "Feel free to get in touch with me",
+  "get_contact": "Get in touch"
 }
