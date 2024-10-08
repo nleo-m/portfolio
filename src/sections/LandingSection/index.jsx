@@ -89,9 +89,7 @@ export default function LandingSection() {
             mb=".75em"
             whiteSpace={{ base: "pre-line", md: "normal" }}
           >
-            {t("i_am")}
-            {"\n"}
-            {occupationRender}
+            &gt; {occupationRender}
           </Heading>
           <Text mb="12px">
             Me chamo Leonel, sou apaixonado por tecnologia e estou sempre
