@@ -10,14 +10,12 @@ import SpinningPlanet from "@/components/SpinningPlanet";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import { scrollToAnchor } from "@/utils/scrollToAnchor";
+import { useSelector } from "react-redux";
 
 export default function LandingSection() {
   const [isMobile] = useMediaQuery("(max-width: 480px)", { ssr: false });
   const { t } = useTranslation();
-
-  useEffect(() => {
-    console.log(isMobile);
-  }, [isMobile]);
+  const { color } = useSelector((state) => state.theme);
 
   const occupations = [
     t("full_dev"),
@@ -80,7 +78,7 @@ export default function LandingSection() {
           <Heading
             fontSize={{ base: 18, md: 32, lg: 38 }}
             mb="12px"
-            color="main.green"
+            color={`main.${color}`}
           >
             Hello world!
           </Heading>
@@ -143,9 +141,9 @@ export default function LandingSection() {
             paddingY={{ base: "22px", md: "28px" }}
             paddingX={{ base: "16px", md: "64px" }}
             w="fit-content"
-            bg="main.green"
+            bg={`main.${color}`}
             transition=".1s ease"
-            _hover={{ bg: "main.lightGreen" }}
+            _hover={{ bg: `main.${color}Light` }}
             onClick={() => scrollToAnchor("contact")}
           >
             Mande uma mensagem

@@ -1,11 +1,13 @@
 import { Box, Button, Text } from "@chakra-ui/react";
 import React, { useEffect, useRef, useState } from "react";
 import Paragraph from "./Paragraph";
+import { useSelector } from "react-redux";
 
 export default function TerminalTextContainer({ paragraphs = [] }) {
   const maxIndex = paragraphs.length - 1;
   const [index, setIndex] = useState(0);
   const ref = useRef();
+  const { color } = useSelector((state) => state.theme);
 
   const [elements, setElements] = useState([
     React.createElement(Paragraph, {
@@ -49,11 +51,11 @@ export default function TerminalTextContainer({ paragraphs = [] }) {
       <Button
         bg="#131313"
         paddingX={8}
-        color="main.green"
+        color={`main.${color}`}
         borderRadius="2px"
         onClick={nextText}
       >
-        Mais...
+        Ver mais...
       </Button>
     </Box>
   );
