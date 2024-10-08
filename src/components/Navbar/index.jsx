@@ -50,6 +50,12 @@ export default function Navbar() {
             icon={<LinkedinLogo size={28} weight="fill" />}
           />
           <SocialButton
+            url="https://tryhackme.com/r/p/ov33r"
+            icon={
+              <Image src="/assets/imgs/tryhackme.png" maxW="32px" maxH="32px" />
+            }
+          />
+          <SocialButton
             url="https://medium.com/@leonel-m"
             icon={<MediumLogo size={28} weight="fill" />}
           />
