@@ -10,14 +10,13 @@ import SpinningPlanet from "@/components/SpinningPlanet";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import { scrollToAnchor } from "@/utils/scrollToAnchor";
+import { useSelector } from "react-redux";
+import CustomButton from "@/components/CustomButton";
 
 export default function LandingSection() {
   const [isMobile] = useMediaQuery("(max-width: 480px)", { ssr: false });
   const { t } = useTranslation();
-
-  useEffect(() => {
-    console.log(isMobile);
-  }, [isMobile]);
+  const { color } = useSelector((state) => state.theme);
 
   const occupations = [
     t("full_dev"),
@@ -73,14 +72,14 @@ export default function LandingSection() {
       <Flex position="relative" align="center" w="80%">
         <Flex
           direction="column"
-          w={{ base: "100%", md: "80%" }}
+          w={{ base: "100%", md: "78%" }}
           position="relative"
           gap="2px"
         >
           <Heading
             fontSize={{ base: 18, md: 32, lg: 38 }}
             mb="12px"
-            color="main.green"
+            color={`main.${color}`}
           >
             Hello world!
           </Heading>
@@ -90,9 +89,7 @@ export default function LandingSection() {
             mb=".75em"
             whiteSpace={{ base: "pre-line", md: "normal" }}
           >
-            {t("i_am")}
-            {"\n"}
-            {occupationRender}
+            &gt; {occupationRender}
           </Heading>
           <Text mb="12px">
             Me chamo Leonel, sou apaixonado por tecnologia e estou sempre
@@ -107,7 +104,11 @@ export default function LandingSection() {
           <Text>
             Atualmente, venho buscado me aprofudar na área de cybersegurança.
             Estou fazendo treinamentos no{" "}
-            <a href="https://tryhackme.com/p/ov33r" _target="blank">
+            <a
+              href="https://tryhackme.com/p/ov33r"
+              _target="blank"
+              style={{ color: "#007bff" }}
+            >
               TryHackMe
             </a>{" "}
             e{" "}
@@ -137,19 +138,9 @@ export default function LandingSection() {
             Sinta-se à vontade para entrar em contato comigo :{")"}
           </Text>
 
-          <Button
-            mt={{ base: "32px", md: "64px" }}
-            borderRadius="2px"
-            paddingY={{ base: "22px", md: "28px" }}
-            paddingX={{ base: "16px", md: "64px" }}
-            w="fit-content"
-            bg="main.green"
-            transition=".1s ease"
-            _hover={{ bg: "main.lightGreen" }}
-            onClick={() => scrollToAnchor("contact")}
-          >
-            Mande uma mensagem
-          </Button>
+          <CustomButton onClick={() => scrollToAnchor("contact")}>
+            Entre em contato
+          </CustomButton>
         </Flex>
 
         <Flex

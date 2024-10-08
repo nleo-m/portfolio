@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { useSelector } from "react-redux";
 
 const MotionBox = motion(Box);
 
@@ -16,6 +17,7 @@ export default function ExperienceCard({
   odd = false,
 }) {
   const { t } = useTranslation();
+  const { color } = useSelector((state) => state.theme);
 
   const ref = useRef(null);
 
@@ -36,7 +38,7 @@ export default function ExperienceCard({
       bg={odd % 2 === 0 ? "#161616" : "#202020"}
       padding={{ base: ".75em 1em", sm: "1.25em 1.5em" }}
       borderLeft="4px solid"
-      borderColor="terminal.green"
+      borderColor={`terminal.${color}`}
       justify="center"
       minH="175px"
       style={{ opacity: opacity, x: posX }}
@@ -52,7 +54,7 @@ export default function ExperienceCard({
           {startDate} - {endDate}
         </Text>
       </Flex>
-      <Text fontWeight="bold" color="main.green" fontSize={20}>
+      <Text fontWeight="bold" color={`main.${color}`} fontSize={20}>
         {t(position)}
       </Text>
       <Text mt="8px" color="gray.100">
