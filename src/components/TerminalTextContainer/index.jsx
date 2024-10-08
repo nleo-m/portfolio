@@ -2,6 +2,7 @@ import { Box, Button, Text } from "@chakra-ui/react";
 import React, { useEffect, useRef, useState } from "react";
 import Paragraph from "./Paragraph";
 import { useSelector } from "react-redux";
+import CustomButton from "@/components/CustomButton";
 
 export default function TerminalTextContainer({ paragraphs = [] }) {
   const maxIndex = paragraphs.length - 1;
@@ -37,7 +38,7 @@ export default function TerminalTextContainer({ paragraphs = [] }) {
     <Box position="relative" w="100%" align="center">
       <Box
         ref={ref}
-        bg="#131313"
+        bg="#101010"
         whiteSpace="pre-line"
         mb="12px"
         h="320px"
@@ -48,15 +49,16 @@ export default function TerminalTextContainer({ paragraphs = [] }) {
         {elements.map((e) => e)}
       </Box>
 
-      <Button
-        bg="#131313"
-        paddingX={8}
+      <CustomButton
+        bg="#090909"
         color={`main.${color}`}
-        borderRadius="2px"
+        _hover={{ bg: "#101010" }}
+        mt="12px"
+        w="100%"
         onClick={nextText}
       >
         Ver mais...
-      </Button>
+      </CustomButton>
     </Box>
   );
 }

@@ -22,6 +22,7 @@ import emailjs from "@emailjs/browser";
 
 import CustomToast from "@/components/CustomToast";
 import SectionTitle from "@/components/SectionTitle";
+import CustomButton from "@/components/CustomButton";
 
 export default function ContactSection() {
   const validationSchema = yup.object().shape({
@@ -160,16 +161,9 @@ export default function ContactSection() {
               <FormErrorMessage>{errors?.body?.message}</FormErrorMessage>
             </FormControl>
 
-            <Button
-              type="submit"
-              mt="18px"
-              w={{ base: "100%", md: "fit-content" }}
-              padding="5px 75px"
-              bg="main.green"
-              alignSelf="center"
-            >
+            <CustomButton type="submit" alignSelf="center">
               Enviar
-            </Button>
+            </CustomButton>
           </Flex>
         </form>
       </Flex>

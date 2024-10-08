@@ -11,6 +11,7 @@ import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import { scrollToAnchor } from "@/utils/scrollToAnchor";
 import { useSelector } from "react-redux";
+import CustomButton from "@/components/CustomButton";
 
 export default function LandingSection() {
   const [isMobile] = useMediaQuery("(max-width: 480px)", { ssr: false });
@@ -135,19 +136,9 @@ export default function LandingSection() {
             Sinta-se à vontade para entrar em contato comigo :{")"}
           </Text>
 
-          <Button
-            mt={{ base: "32px", md: "64px" }}
-            borderRadius="2px"
-            paddingY={{ base: "22px", md: "28px" }}
-            paddingX={{ base: "16px", md: "64px" }}
-            w="fit-content"
-            bg={`main.${color}`}
-            transition=".1s ease"
-            _hover={{ bg: `main.${color}Light` }}
-            onClick={() => scrollToAnchor("contact")}
-          >
-            Mande uma mensagem
-          </Button>
+          <CustomButton onClick={() => scrollToAnchor("contact")}>
+            Entre em contato
+          </CustomButton>
         </Flex>
 
         <Flex

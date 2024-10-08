@@ -18,6 +18,7 @@ import { useTranslation } from "react-i18next";
 import { Eye, GitCommit } from "@phosphor-icons/react";
 import { GithubLogo } from "@phosphor-icons/react/dist/ssr";
 import SocialButton from "@/components/SocialButton";
+import { useSelector } from "react-redux";
 
 export default function ProjectCard({
   img,
@@ -28,6 +29,7 @@ export default function ProjectCard({
   preview,
 }) {
   const { t } = useTranslation();
+  const { color } = useSelector((state) => state.theme);
 
   return (
     <Card
@@ -38,14 +40,13 @@ export default function ProjectCard({
       cursor="pointer"
       transition=".25s ease"
       border="none"
-      borderColor="terminal.green"
+      borderColor={`terminal.${color} !important`}
       boxShadow="0 4px 12px 4px #00000025"
       padding={{ base: ".25em", md: "1em" }}
       _hover={{
         transform: "scale(1.025)",
         borderTop: "2px solid",
         borderBottom: "2px solid",
-        borderColor: "terminal.green",
         boxShadow: "0 10px 24px 8px #00000050",
       }}
     >

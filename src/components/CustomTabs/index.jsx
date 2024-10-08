@@ -1,7 +1,10 @@
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import { scrollToAnchor } from "@/utils/scrollToAnchor";
+import { useSelector } from "react-redux";
 
 export default function CustomTabs({ data }) {
+  const { color } = useSelector((state) => state.theme);
+
   return (
     <Tabs align="end">
       <TabList
@@ -15,11 +18,13 @@ export default function CustomTabs({ data }) {
             _selected={{
               borderBottom: { base: "none", md: "4px solid" },
               borderLeft: { base: "4px solid", md: "none" },
-              borderColor: { base: "main.green", md: "main.green" },
+              borderColor: { base: `main.${color}`, md: `main.${color}` },
+              color: "white",
               fontWeight: "bold",
               bg: "main.gray",
             }}
             fontSize={{ base: 16, md: 18 }}
+            color="gray.400"
             paddingX="50px"
             onClick={() => {
               scrollToAnchor("experience-col");
