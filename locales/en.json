@@ -10,8 +10,7 @@
   "projects": "Projects",
   "tech": "Tech",
   "technologies": "Technologies",
-  "tech_stack": "Languages and Tech I work or have worked with",
-  "tools_stack": "Tools and platforms I use or have used",
+
   "contact": "Contact",
   "professional": "Professional",
   "academic": "Academic",
@@ -37,7 +36,6 @@
   "pr_virtual_assistant_desc": "Customizable personal assistant with voice recognition and text-to-speech.",
   "pr_focus_point_desc": "\"All in one\" application bundled with tools for organization and time management. Mobile focused development.",
   "pr_cool_rainbows_desc": "One of my first codes pushed to github, made for learning and fun. Basically a color switcher in vanilla js.",
-  "see_more": "See more",
   "get_in_touch": "Get in touch with me",
   "email": "Email",
   "name": "Name",
@@ -53,5 +51,16 @@
   "landing5": "I want to develop the practical and theoretical knowledge necessary to work into this field.",
   "landing6": "Going a little further, I am a proud father and, in my free time: artist, tattoo artist, writer wannabe, gamer, among other things.",
   "landing7": "Feel free to get in touch with me",
-  "get_contact": "Get in touch"
+  "get_contact": "Get in touch",
+
+  "tech1": "As mentioned before, during my career as a developer I had the opportunity to work with several languages ​​and technologies. Among them, I can highlight: Javascript mainly through the React framework, Node, Python and Laravel. \n I also ventured into creating games in the Unity engine, using C#. I even worked in the area for a brief period as a substitute teacher. \n Although I still have a lot to learn, I can say that I worked with different Design Patterns. I always tried to pay attention to the concepts of SOLID and clean code to build a clean, reusable and scalable code.",
+  "tech2": "I've been studying cybersecurity and completing CTFs on a daily basis, mainly through Portswigger Academy e TryHackMe. Which is allowing me to build a lot of theoretical knowledge, but also apply them on a hands-on approach.",
+  "tech3": "Been using Linux even before start my career on Tech and I'm pretty comfortable around a terminal. I use Mint (and Kali) on my day-to-day, but also played with other distributions.",
+  "tech4": "I have experience using relational databases like MySQL and Postgres, interacting with them manually and through ORMs such as Eloquent and Sequelize. \n I also have good skills versioning with git, and dealing with Docker containers.",
+  "tech5": "I've hosted full-stack applications on GCP Compute Engine VMs, setuping Nginx as a reverse proxy and using pm2 for process persistence. \n Implemented Restful APIs and use tools like Postman for testing.",
+  "tech6": "Almost or also as important, I'm a dedicated and creative person. Everyday and every obstacle is a opportunity for learning something new. Our biggest allies are Google and documentations, and I'm capable of searching an surf through them :)",
+  "see_more": "See more",
+  "seen_all": "Among other things",
+  "tech_stack": "Languages and Tech I work or have worked with",
+  "tools_stack": "Tools and platforms I use or have used"
 }
