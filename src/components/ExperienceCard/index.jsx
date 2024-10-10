@@ -59,8 +59,14 @@ export default function ExperienceCard({
       </Text>
 
       <Flex mt="24px" gap="1em" overflowX="scroll">
-        {tags?.map((t) => (
-          <Text bg="black" padding="4px 8px" fontSize={13} whiteSpace="nowrap">
+        {tags?.map((t, i) => (
+          <Text
+            key={i}
+            bg="black"
+            padding="4px 8px"
+            fontSize={13}
+            whiteSpace="nowrap"
+          >
             {t}
           </Text>
         ))}

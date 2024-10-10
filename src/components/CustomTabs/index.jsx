@@ -13,8 +13,9 @@ export default function CustomTabs({ data }) {
         borderBottom="1px solid #707570"
         gap=".5em"
       >
-        {data?.map((t) => (
+        {data?.map((t, i) => (
           <Tab
+            key={i}
             _selected={{
               borderBottom: { base: "none", md: "4px solid" },
               borderLeft: { base: "4px solid", md: "none" },
@@ -36,8 +37,8 @@ export default function CustomTabs({ data }) {
       </TabList>
 
       <TabPanels>
-        {data?.map((t) => (
-          <TabPanel>{t?.panel}</TabPanel>
+        {data?.map((t, i) => (
+          <TabPanel key={i}>{t?.panel}</TabPanel>
         ))}
       </TabPanels>
     </Tabs>

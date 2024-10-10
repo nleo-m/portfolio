@@ -86,8 +86,14 @@ export default function ProjectCard({
         </Flex>
 
         <Flex mt="24px" gap={{ base: ".75em", sm: "1em" }} overflow="scroll">
-          {tags?.map((t) => (
-            <Text bg="black" padding="4px" fontSize={13} whiteSpace="nowrap">
+          {tags?.map((t, i) => (
+            <Text
+              key={i}
+              bg="black"
+              padding="4px"
+              fontSize={13}
+              whiteSpace="nowrap"
+            >
               {t}
             </Text>
           ))}

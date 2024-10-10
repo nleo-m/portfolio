@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 export default function StackIcon(props) {
   const { color } = useSelector((state) => state.theme);
 
-  const { children, hoverFill = "blue.500", invert = false } = props;
+  const { children, hover = "blue.500", invert = false } = props;
 
   return (
     <Icon
@@ -17,8 +17,8 @@ export default function StackIcon(props) {
       _hover={{
         cursor: "pointer",
         transform: "scale(1.10)",
-        ...(!invert && { fill: hoverFill }),
-        ...(invert && { background: hoverFill }),
+        ...(!invert && { fill: hover }),
+        ...(invert && { background: hover }),
       }}
       {...props}
     >

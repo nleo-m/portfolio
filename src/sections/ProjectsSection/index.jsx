@@ -55,8 +55,8 @@ export default function ProjectsSection() {
         <SectionTitle align="end">{t("title_projects")}</SectionTitle>
 
         <Slider className="projects" {...settings}>
-          {projectsData.map((p) => (
-            <ProjectCard {...p} />
+          {projectsData.map((p, i) => (
+            <ProjectCard key={i} {...p} />
           ))}
         </Slider>
       </Flex>

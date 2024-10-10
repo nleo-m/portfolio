@@ -18,7 +18,7 @@ export default function ExperienceCollection({ type = "professional" }) {
   return (
     <Flex direction="column">
       {experiences[type]?.map((e, i) => (
-        <ExperienceCard {...e} odd={i} />
+        <ExperienceCard key={i} {...e} odd={i} />
       ))}
     </Flex>
   );

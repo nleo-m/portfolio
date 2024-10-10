@@ -121,12 +121,12 @@ function PopCode() {
       maxH="90%"
       maxW="80%"
     >
-      {lines.map((line, index) => (
+      {lines.map((line, i) => (
         <Text
+          key={i}
           color="terminal.red"
           fontFamily="monospace"
           as={motion.div}
-          key={index}
           initial={{ opacity: 0, y: 20 }} // Starts off screen
           animate={{ opacity: 1, y: 0 }} // Fades and moves up into view
           exit={{ opacity: 0, y: -20 }} // Moves up and fades out as it leaves
