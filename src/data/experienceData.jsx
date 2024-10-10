@@ -2,8 +2,7 @@ export const professionalExperienceData = [
   {
     position: "full_dev",
     institution: "Centro universitário FMU | FIAM",
-    description:
-      "Implementação de novas features, resolução de bugs e manutenção do código na corrida pela digitalização da empresa e substituição de sistemas legados.",
+    description: "desc_fmu",
     startDate: "04/2024",
     endDate: "present",
     tags: [
@@ -23,8 +22,7 @@ export const professionalExperienceData = [
   {
     position: "full_dev",
     institution: "Health ID",
-    description:
-      "Além de atuar com desenvolvimento também auxiliava em questões de UI e UX. Durante meu tempo na Health ID pude crescer muito profissionalmente. ",
+    description: "desc_health",
     startDate: "05/2021",
     endDate: "02/2024",
     tags: [
@@ -44,8 +42,7 @@ export const professionalExperienceData = [
   {
     position: "comp_tech",
     institution: "IBX Informática",
-    description:
-      "Realizava os reparos necessários, que iam desde uma simples formatação até a troca de peças. O contrato foi encerrado prematuramente devido a complicações da pandemia.",
+    description: "desc_ibx",
     startDate: "10/2020",
     endDate: "12/2020",
     tags: ["Hardware", "Sistemas operacionais", "Linux", "Windows"],
@@ -53,16 +50,14 @@ export const professionalExperienceData = [
   {
     position: "sub_teacher",
     institution: "Happy code",
-    description:
-      "Criação do material e preparo das aulas de programação, com enfoque em jogos, ministradas para público infanto-juvenil.",
+    description: "desc_happy",
     startDate: "10/2019",
     endDate: "12/2019",
     tags: ["C#", "Unity", "Unity3D", "Construct2", "Blender"],
   },
   {
     position: "freela_art",
-    description:
-      "Buscando entender as necessidades dos meus clientes, aplicava os meus conhecimentos de forma criativa, visando entregas inovadoras e de qualidade.",
+    description: "desc_art",
     startDate: "01/2019",
     endDate: "12/2021",
     tags: [
@@ -97,7 +92,7 @@ export const academicExperienceData = [
   {
     position: "ead_info_sys",
     institution: "Estácio de Sá",
-    description: "[Interrompido]",
+    description: "interrupted",
     startDate: "07/2018",
     endDate: " 07/2020",
     tags: [],
@@ -105,7 +100,7 @@ export const academicExperienceData = [
   {
     position: "bi_arts_design",
     institution: "UFJF",
-    description: "[Interrompido]",
+    description: "interrupted",
     startDate: "01/2018",
     endDate: " 06/2018",
     tags: [],
@@ -116,8 +111,7 @@ export const complementaryExperienceData = [
   {
     position: "Learning Paths",
     institution: "TryHackMe",
-    description:
-      "Em curso: Complete beginner; SOC1 \n Completos: Introduction to cyber-security; Pre-security",
+    description: "desc_thm_path",
     tags: [
       "Linux",
       "Enumeration",
@@ -146,7 +140,7 @@ export const complementaryExperienceData = [
     ],
   },
   {
-    position: "CTF's Portswigger academy",
+    position: "CTF's Portswigger Academy",
     institution: "Portswigger",
     description: "",
     tags: [
@@ -162,7 +156,7 @@ export const complementaryExperienceData = [
     ],
   },
   {
-    position: "Exposições artísticas",
+    position: "art_expos",
     description:
       "Exposição de algumas pinturas de minha autoria em diferentes bares e studios da minha cidade",
   },

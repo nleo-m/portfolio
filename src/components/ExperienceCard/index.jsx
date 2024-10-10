@@ -55,7 +55,7 @@ export default function ExperienceCard({
         {capitalizeFirstChar(t(position))}
       </Text>
       <Text mt="12px" color="gray.100" whiteSpace="pre-line">
-        {description}
+        {t(description)}
       </Text>
 
       <Flex mt="24px" gap="1em" overflowX="scroll">
