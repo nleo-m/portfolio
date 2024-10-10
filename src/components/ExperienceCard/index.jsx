@@ -1,7 +1,7 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { useSelector } from "react-redux";
 import { capitalizeFirstChar } from "@/utils/capitalizeFirstChar";
@@ -21,15 +21,7 @@ export default function ExperienceCard({
   const { color } = useSelector((state) => state.theme);
 
   const ref = useRef(null);
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start center", "center center"],
-  });
-
-  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
-
-  const posX = useTransform(scrollYProgress, [0, 1], [-50, 0]);
+  const isInView = useInView(ref, { once: true, margin: "-75px" });
 
   return (
     <MotionBox
@@ -42,13 +34,17 @@ export default function ExperienceCard({
       borderColor={`terminal.${color}`}
       justify="center"
       minH="175px"
-      style={{ opacity: opacity, x: posX }}
+      style={{
+        transform: isInView ? "none" : "translateX(-50px)",
+        opacity: isInView ? 1 : 0,
+        transition: ".5s ease-out",
+      }}
       gap=".25em"
     >
       <Flex
-        align="center"
         justify="space-between"
         fontSize={{ base: 16, md: 18 }}
+        direction={{ base: "column", sm: "row" }}
       >
         <Text>{institution}</Text>
         <Text fontSize={{ base: 14, sm: 16, md: 18 }} color="gray.200">
@@ -58,7 +54,7 @@ export default function ExperienceCard({
       <Text fontWeight="bold" color={`main.${color}`} fontSize={20}>
         {capitalizeFirstChar(t(position))}
       </Text>
-      <Text mt="8px" color="gray.100">
+      <Text mt="12px" color="gray.100" whiteSpace="pre-line">
         {description}
       </Text>
 
