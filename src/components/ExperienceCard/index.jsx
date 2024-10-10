@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { useSelector } from "react-redux";
+import { capitalizeFirstChar } from "@/utils/capitalizeFirstChar";
 
 const MotionBox = motion(Box);
 
@@ -51,19 +52,19 @@ export default function ExperienceCard({
       >
         <Text>{institution}</Text>
         <Text fontSize={{ base: 14, sm: 16, md: 18 }} color="gray.200">
-          {startDate} - {endDate}
+          {startDate} - {t(endDate)}
         </Text>
       </Flex>
       <Text fontWeight="bold" color={`main.${color}`} fontSize={20}>
-        {t(position)}
+        {capitalizeFirstChar(t(position))}
       </Text>
       <Text mt="8px" color="gray.100">
         {description}
       </Text>
 
-      <Flex mt="24px" gap="1em">
+      <Flex mt="24px" gap="1em" overflowX="scroll">
         {tags?.map((t) => (
-          <Text fontSize={13} padding="4px 18px" bg="black">
+          <Text bg="black" padding="4px 8px" fontSize={13} whiteSpace="nowrap">
             {t}
           </Text>
         ))}
