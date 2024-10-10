@@ -4,8 +4,10 @@ const theme = extendTheme({
   colors: {
     main: {
       green: "#00ED6D",
-      lightGreen: "#12FC73",
-      gray: "#1B241B",
+      greenLight: "#12FC73",
+      red: "#FA4030",
+      redLight: "#FA4030",
+      gray: "#181818",
     },
     bg: {
       gray: "#181818",
@@ -15,6 +17,11 @@ const theme = extendTheme({
       red: "#DB3E39",
     },
   },
+  fonts: {
+    body: `"Roboto Mono", monospace, sans-serif`,
+    heading: `"Roboto Mono", monospace, sans-serif`,
+  },
+
   styles: {
     global: {
       body: {
@@ -23,6 +30,7 @@ const theme = extendTheme({
       a: {
         color: "main.green",
         textDecoration: "underline",
+        zIndex: 99,
       },
     },
   },

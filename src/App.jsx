@@ -14,13 +14,23 @@ import Footer from "@/components/Footer";
 import StatsMonitor from "@/components/StatsMonitor";
 
 import "@/styles/css/globals.css";
+import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const { currLang } = useSelector((state) => state.language);
+  const {
+    i18n: { changeLanguage },
+  } = useTranslation();
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 2600);
   }, []);
+
+  useEffect(() => {
+    changeLanguage(currLang);
+  }, [currLang]);
 
   return (
     <Flex
@@ -33,13 +43,19 @@ function App() {
       animate={{ opacity: 1, y: 0 }}
     >
       {/* <StatsMonitor /> */}
-      <Navbar />
-      <LandingSection />
-      <TechnicalOverviewSection />
-      <ExperienceSection />
-      <ProjectsSection />
-      <ContactSection />
-      <Footer />
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <Navbar />
+          <LandingSection />
+          <TechnicalOverviewSection />
+          <ExperienceSection />
+          <ProjectsSection />
+          <ContactSection />
+          <Footer />
+        </>
+      )}
     </Flex>
   );
 }

@@ -3,6 +3,8 @@ import React, { useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { AsciiRenderer } from "@react-three/drei";
 import { Bloom, EffectComposer, Noise } from "@react-three/postprocessing";
+import { useDispatch, useSelector } from "react-redux";
+import { hackThePlanet } from "@/store/ThemeReducer";
 
 const Planet = () => {
   const texture = new THREE.TextureLoader().load("/textures/bw-globe.jpg");
@@ -17,7 +19,9 @@ const Planet = () => {
   const randomPositions = useRef([]);
   const interpolationFactor = useRef(0);
   const resetting = useRef(false);
-  const [inverted, setInverted] = useState(false);
+
+  const { color } = useSelector((state) => state.theme);
+  const dispatch = useDispatch();
 
   // Helper function to initialize original and random positions
   const initializePositions = () => {
@@ -44,7 +48,7 @@ const Planet = () => {
 
       // After 1 seconds, reset to original positions
       setTimeout(() => {
-        setInverted((prev) => !prev);
+        dispatch(hackThePlanet());
         resetting.current = true;
         interpolationFactor.current = 0; // Reset interpolation factor for smooth reset
         setIsAnimating(true); // Trigger the reset animation
@@ -98,7 +102,7 @@ const Planet = () => {
       <AsciiRenderer
         invert={false}
         bgColor="transparent"
-        fgColor={inverted ? "#FA2120" : "#4EF531"}
+        fgColor={color === "red" ? "#FA2120" : "#4EF531"}
         resolution={0.15}
       />
 

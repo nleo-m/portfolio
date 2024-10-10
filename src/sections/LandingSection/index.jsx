@@ -3,7 +3,6 @@ import {
   Center,
   Flex,
   Heading,
-  Link,
   Text,
   useMediaQuery,
 } from "@chakra-ui/react";
@@ -11,14 +10,13 @@ import SpinningPlanet from "@/components/SpinningPlanet";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import { scrollToAnchor } from "@/utils/scrollToAnchor";
+import { useSelector } from "react-redux";
+import CustomButton from "@/components/CustomButton";
 
 export default function LandingSection() {
   const [isMobile] = useMediaQuery("(max-width: 480px)", { ssr: false });
   const { t } = useTranslation();
-
-  useEffect(() => {
-    console.log(isMobile);
-  }, [isMobile]);
+  const { color } = useSelector((state) => state.theme);
 
   const occupations = [
     t("full_dev"),
@@ -74,12 +72,15 @@ export default function LandingSection() {
       <Flex position="relative" align="center" w="80%">
         <Flex
           direction="column"
-          w={{ base: "100%", md: "80%" }}
+          w={{ base: "100%", md: "78%" }}
           position="relative"
           gap="2px"
-          zIndex={1}
         >
-          <Heading fontSize={{ base: 18, md: 32, lg: 38 }} mb="12px">
+          <Heading
+            fontSize={{ base: 18, md: 32, lg: 38 }}
+            mb="12px"
+            color={`main.${color}`}
+          >
             Hello world!
           </Heading>
           <Heading
@@ -88,62 +89,44 @@ export default function LandingSection() {
             mb=".75em"
             whiteSpace={{ base: "pre-line", md: "normal" }}
           >
-            {t("i_am")}
-            {"\n"}
-            {occupationRender}
+            &gt; {occupationRender}
           </Heading>
-          <Text mb="12px">
-            Me chamo Leonel, sou apaixonado por tecnologia e estou sempre
-            buscando aprender algo novo.
-          </Text>
+          <Text mb="12px">{t("landing1")}</Text>
+
+          <Text>{t("landing2")}</Text>
 
           <Text>
-            Atuo como desenvolvedor full-stack há alguns anos e durante esse
-            tempo tive a oportunidade de trabalhar com diversas tecnologias.
-          </Text>
-
-          <Text>
-            Atualmente, venho buscado me aprofudar na área de cybersegurança.
-            Estou fazendo treinamentos no{" "}
-            <a href="https://tryhackme.com/p/ov33r" _target="blank">
+            {t("landing3")}{" "}
+            <a
+              href="https://tryhackme.com/p/ov33r"
+              _target="blank"
+              style={{ color: "#007bff" }}
+            >
               TryHackMe
             </a>{" "}
-            e{" "}
-            <a href="https://portswigger.net/" _target="blank">
+            {t("and")}{" "}
+            <a
+              href="https://portswigger.net/"
+              _target="blank"
+              style={{ color: "orange" }}
+            >
               Portswigger
             </a>
             {isMobile && "."}
-            {!isMobile &&
-              " me familiarizando com técnicas e ferramentas usadas na exploração de vulnerabilidades web, assim como a mitigação e prevenção."}
+            {!isMobile && " " + t("landing4")}
           </Text>
 
-          <Text>
-            Desejo desenvolver o conhecimento prático e teórico necessário para
-            atuar na área.
-          </Text>
+          <Text>{t("landing5")}</Text>
+
+          <Text mt="12px">{t("landing6")}</Text>
 
           <Text mt="12px">
-            Indo um pouco além sou um pai orgulhoso e, no meu tempo livre:
-            artista, tatuador, aspirante a escritor, gamer, entre outras coisas.
+            {t("landing7")} :{")"}
           </Text>
 
-          <Text mt="12px">
-            Sinta-se à vontade para entrar em contato comigo :{")"}
-          </Text>
-
-          <Button
-            mt={{ base: "32px", md: "64px" }}
-            borderRadius="2px"
-            paddingY={{ base: "22px", md: "28px" }}
-            paddingX={{ base: "16px", md: "64px" }}
-            w="fit-content"
-            bg="main.green"
-            transition=".1s ease"
-            _hover={{ bg: "main.lightGreen" }}
-            onClick={() => scrollToAnchor("contact")}
-          >
-            Mande uma mensagem
-          </Button>
+          <CustomButton onClick={() => scrollToAnchor("contact")}>
+            {t("get_contact")}
+          </CustomButton>
         </Flex>
 
         <Flex

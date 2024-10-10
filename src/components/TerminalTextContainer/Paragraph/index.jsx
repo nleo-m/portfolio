@@ -1,9 +1,12 @@
 import { Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 
 export default function Paragraph({ paragraph, containerRef }) {
   const [render, setRender] = useState("");
   const [index, setIndex] = useState(0);
+  const { color } = useSelector((state) => state.theme);
 
   const scrollToBottom = () => {
     containerRef.current.scrollTop = containerRef.current.scrollHeight;
@@ -26,10 +29,10 @@ export default function Paragraph({ paragraph, containerRef }) {
   }, [index]);
 
   return (
-    <Text marginY="8px">
+    <Text marginY="8px" textAlign="left">
       &gt; {render}
       {index < paragraph.length && (
-        <Text as="span" fontSize={22} color="terminal.green">
+        <Text as="span" fontSize={22} color={`terminal.${color}`}>
           {" "}
           ▮
         </Text>

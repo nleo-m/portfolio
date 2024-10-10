@@ -22,23 +22,27 @@ import emailjs from "@emailjs/browser";
 
 import CustomToast from "@/components/CustomToast";
 import SectionTitle from "@/components/SectionTitle";
+import CustomButton from "@/components/CustomButton";
+import { useTranslation } from "react-i18next";
 
 export default function ContactSection() {
+  const { t } = useTranslation();
+
   const validationSchema = yup.object().shape({
-    name: yup.string().max(128).required("O campo nome é obrigatório"),
+    name: yup.string().required("err_required_field"),
     email: yup
       .string()
       .max(255)
-      .email("Por favor, insira um email válido")
-      .required("O campo email é obrigatório"),
+      .email("err_invalid_email")
+      .required("err_required_field"),
     subject: yup
       .string()
-      .max(255, "O assunto deve ter no máximo 255 caracteres")
-      .required("O campo assunto é obrigatório"),
+      .max(255, "err_subject_length")
+      .required("err_required_field"),
     body: yup
       .string()
-      .max(512, "A mensagem deve ter no máximo 512 caracteres")
-      .required("O campo mensagem é obrigatório"),
+      .max(512, "err_message_length")
+      .required("err_required_field"),
   });
 
   const {
@@ -63,7 +67,6 @@ export default function ContactSection() {
       )
       .then(() => {
         toast({
-          title: "Enviado com sucesso, te respondo já já!",
           status: "success",
           isClosable: true,
           render: () => <CustomToast />,
@@ -72,16 +75,11 @@ export default function ContactSection() {
         reset();
       })
       .catch((e) => {
-        console.log(e);
         toast({
-          title: "Erro ao enviar sua mensagem!",
           status: "error",
           isClosable: true,
           render: () => (
-            <CustomToast
-              status="error"
-              message="Ixe, falha ao enviar mensagem!"
-            />
+            <CustomToast status="error" message="contact_toast_error" />
           ),
         });
       });
@@ -90,7 +88,7 @@ export default function ContactSection() {
   return (
     <Center id="contact" mt="100px">
       <Flex direction="column" w="80%">
-        <SectionTitle>Entre em contato :{")"}</SectionTitle>
+        <SectionTitle>{t("title_contact")}</SectionTitle>
 
         <form onSubmit={handleSubmit(onSubmit)}>
           <Flex direction="column" gap="12px">
@@ -107,7 +105,7 @@ export default function ContactSection() {
                   borderColor: " terminal.green",
                 }}
               />
-              <FormErrorMessage>{errors?.name?.message}</FormErrorMessage>
+              <FormErrorMessage>{t(errors?.name?.message)}</FormErrorMessage>
             </FormControl>
 
             <FormControl isInvalid={errors?.email}>
@@ -124,7 +122,7 @@ export default function ContactSection() {
                   borderColor: " terminal.green",
                 }}
               />
-              <FormErrorMessage>{errors?.email?.message}</FormErrorMessage>
+              <FormErrorMessage>{t(errors?.email?.message)}</FormErrorMessage>
             </FormControl>
 
             <FormControl isInvalid={errors?.subject}>
@@ -140,7 +138,7 @@ export default function ContactSection() {
                   borderColor: " terminal.green",
                 }}
               />
-              <FormErrorMessage>{errors?.subject?.message}</FormErrorMessage>
+              <FormErrorMessage>{t(errors?.subject?.message)}</FormErrorMessage>
             </FormControl>
 
             <FormControl isInvalid={errors?.body}>
@@ -157,19 +155,12 @@ export default function ContactSection() {
                   borderColor: " terminal.green",
                 }}
               />
-              <FormErrorMessage>{errors?.body?.message}</FormErrorMessage>
+              <FormErrorMessage>{t(errors?.body?.message)}</FormErrorMessage>
             </FormControl>
 
-            <Button
-              type="submit"
-              mt="18px"
-              w={{ base: "100%", md: "fit-content" }}
-              padding="5px 75px"
-              bg="main.green"
-              alignSelf="center"
-            >
-              Enviar
-            </Button>
+            <CustomButton type="submit" alignSelf="center">
+              {t("send")}
+            </CustomButton>
           </Flex>
         </form>
       </Flex>

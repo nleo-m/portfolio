@@ -17,13 +17,18 @@ import {
   TrayArrowDown,
 } from "@phosphor-icons/react";
 import SocialButton from "@/components/SocialButton";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Hamburger } from "@phosphor-icons/react/dist/ssr";
+import { useDispatch, useSelector } from "react-redux";
+import { nextLang } from "@/store/LanguageReducer";
 
 export default function Navbar() {
   const [shouldCollapseMenus] = useMediaQuery("(max-width: 740px)", {
     ssr: false,
   });
+
+  const { currLang = "br" } = useSelector((state) => state.language);
+  const dispatch = useDispatch();
 
   const [menu, setMenu] = useState("socials");
 
@@ -50,6 +55,12 @@ export default function Navbar() {
             icon={<LinkedinLogo size={28} weight="fill" />}
           />
           <SocialButton
+            url="https://tryhackme.com/r/p/ov33r"
+            icon={
+              <Image src="/assets/imgs/tryhackme.png" maxW="32px" maxH="32px" />
+            }
+          />
+          <SocialButton
             url="https://medium.com/@leonel-m"
             icon={<MediumLogo size={28} weight="fill" />}
           />
@@ -74,7 +85,7 @@ export default function Navbar() {
 
       {!shouldCollapseMenus || (shouldCollapseMenus && menu === "config") ? (
         <Flex align="center" gap={{ base: ".25em", sm: "1em" }}>
-          <IconButton
+          {/* <IconButton
             h="40px"
             w="40px"
             bg="#313131"
@@ -83,7 +94,7 @@ export default function Navbar() {
             _active={{}}
             _hover={{ transform: "scale(1.1)" }}
             icon={<SunDim color="white" size={28} weight="fill" />}
-          />
+          /> */}
 
           {/* <Button
           h="40px"
@@ -97,10 +108,10 @@ export default function Navbar() {
             boxSize={55}
             objectFit="cover"
             cursor="pointer"
-            src={"/assets/imgs/lang/pt-br.svg"}
+            src={`/assets/imgs/lang/${currLang}.svg`}
             transition=".1s ease"
             _hover={{ transform: "scale(1.1)" }}
-            // onClick={() => nextLang()}
+            onClick={() => dispatch(nextLang())}
           />
           <Button
             bg="transparent"

@@ -1,7 +1,12 @@
-/* the parent */
 .tech-stack .slick-list {
-  padding: 25px;
-  margin: 0 25px;
+  padding: 24px;
+  margin: 0 12px;
+}
+
+.tech-stack .slick-slide {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .projects .slick-list {
@@ -35,7 +40,6 @@
   box-shadow: 0 10px 24px 4px #000000cc;
   border-top: 2px solid;
   border-bottom: 2px solid;
-  border-color: #4ef531;
   transform: scale(1.05);
 }
 
