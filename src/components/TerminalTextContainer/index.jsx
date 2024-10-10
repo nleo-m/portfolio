@@ -1,5 +1,5 @@
 import { Box, Button, Text } from "@chakra-ui/react";
-import React, { useEffect, useRef, useState } from "react";
+import React, { forwardRef, useEffect, useRef, useState } from "react";
 import Paragraph from "./Paragraph";
 import { useSelector } from "react-redux";
 import CustomButton from "@/components/CustomButton";

@@ -87,10 +87,10 @@ export default function TechnicalOverviewSection() {
           </Text>
 
           <Slider className="tech-stack" {...settings}>
-            {techStackData?.map((i) => (
-              <Tooltip openDelay={550} label={i?.name}>
-                <a target="blank" href={i?.url}>
-                  {i?.icon}
+            {techStackData?.map((t, i) => (
+              <Tooltip key={i} openDelay={550} label={t?.name}>
+                <a target="blank" href={t?.url}>
+                  {t?.icon}
                 </a>
               </Tooltip>
             ))}
