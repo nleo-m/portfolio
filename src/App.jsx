@@ -43,19 +43,19 @@ function App() {
       animate={{ opacity: 1, y: 0 }}
     >
       {/* <StatsMonitor /> */}
-      {/* {loading ? (
+      {loading ? (
         <Loading />
-      ) : ( */}
-      <>
-        <Navbar />
-        <LandingSection />
-        <TechnicalOverviewSection />
-        <ExperienceSection />
-        <ProjectsSection />
-        <ContactSection />
-        <Footer />
-      </>
-      {/* // )} */}
+      ) : (
+        <>
+          <Navbar />
+          <LandingSection />
+          <TechnicalOverviewSection />
+          <ExperienceSection />
+          <ProjectsSection />
+          <ContactSection />
+          <Footer />
+        </>
+      )}
     </Flex>
   );
 }
