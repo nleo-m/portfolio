@@ -91,19 +91,12 @@ export default function LandingSection() {
           >
             &gt; {occupationRender}
           </Heading>
-          <Text mb="12px">
-            Me chamo Leonel, sou apaixonado por tecnologia e estou sempre
-            buscando aprender algo novo.
-          </Text>
+          <Text mb="12px">{t("landing1")}</Text>
+
+          <Text>{t("landing2")}</Text>
 
           <Text>
-            Atuo como desenvolvedor full-stack há alguns anos e durante esse
-            tempo tive a oportunidade de trabalhar com diversas tecnologias.
-          </Text>
-
-          <Text>
-            Atualmente, venho buscado me aprofudar na área de cybersegurança.
-            Estou fazendo treinamentos no{" "}
+            {t("landing3")}{" "}
             <a
               href="https://tryhackme.com/p/ov33r"
               _target="blank"
@@ -111,7 +104,7 @@ export default function LandingSection() {
             >
               TryHackMe
             </a>{" "}
-            e{" "}
+            {t("and")}{" "}
             <a
               href="https://portswigger.net/"
               _target="blank"
@@ -120,26 +113,19 @@ export default function LandingSection() {
               Portswigger
             </a>
             {isMobile && "."}
-            {!isMobile &&
-              " me familiarizando com técnicas e ferramentas usadas na exploração de vulnerabilidades web, assim como a mitigação e prevenção."}
+            {!isMobile && " " + t("landing4")}
           </Text>
 
-          <Text>
-            Desejo desenvolver o conhecimento prático e teórico necessário para
-            atuar na área.
-          </Text>
+          <Text>{t("landing5")}</Text>
+
+          <Text mt="12px">{t("landing6")}</Text>
 
           <Text mt="12px">
-            Indo um pouco além sou um pai orgulhoso e, no meu tempo livre:
-            artista, tatuador, aspirante a escritor, gamer, entre outras coisas.
-          </Text>
-
-          <Text mt="12px">
-            Sinta-se à vontade para entrar em contato comigo :{")"}
+            {t("landing7")} :{")"}
           </Text>
 
           <CustomButton onClick={() => scrollToAnchor("contact")}>
-            Entre em contato
+            {t("get_contact")}
           </CustomButton>
         </Flex>
 

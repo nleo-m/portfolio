@@ -23,19 +23,10 @@ import SectionTitle from "@/components/SectionTitle";
 export default function ExperienceSection() {
   const { t } = useTranslation();
 
-  const testExp = {
-    institution: "Centro universitário FMU",
-    position: "Desenvolvedor full-stack",
-    description: "lorem ipsum",
-    startDate: "04/2024",
-    endDate: "present",
-    tags: ["react", "node", "GCP"],
-  };
-
   return (
     <Center mt="100px">
       <Flex direction="column" w="80%">
-        <SectionTitle align="end">Experiência</SectionTitle>
+        <SectionTitle align="end">{t("title_experience")}</SectionTitle>
 
         <CustomTabs
           data={[

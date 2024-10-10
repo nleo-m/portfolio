@@ -52,7 +52,7 @@ export default function ProjectsSection() {
   return (
     <Center mt="100px">
       <Flex direction="column" w="80%">
-        <SectionTitle align="end">Alguns projetos</SectionTitle>
+        <SectionTitle align="end">{t("title_projects")}</SectionTitle>
 
         <Slider className="projects" {...settings}>
           {projectsData.map((p) => (
