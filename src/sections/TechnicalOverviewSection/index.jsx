@@ -41,6 +41,7 @@ export default function TechnicalOverviewSection() {
     speed: 500,
     autoplaySpeed: 2500,
     slidesToShow: 12,
+    rows: 2,
     slidesToScroll: 1,
     autoplay: true,
 
@@ -77,27 +78,23 @@ export default function TechnicalOverviewSection() {
         <TerminalTextContainer paragraphs={p} />
 
         <Flex mt="32px" direction="column">
-          {techStackData?.map((category) => (
-            <>
-              <Text
-                fontWeight="bold"
-                fontSize={{ base: "18px", md: "21px" }}
-                marginY="12px"
-              >
-                {t(category?.title)}
-              </Text>
+          <Text
+            fontWeight="bold"
+            fontSize={{ base: "18px", md: "21px" }}
+            marginY="12px"
+          >
+            {t("tech_stack")}
+          </Text>
 
-              <Slider className="tech-stack" {...settings}>
-                {category.items.map((i) => (
-                  <Tooltip openDelay={550} label={i?.name}>
-                    <a target="blank" href={i?.url}>
-                      {i?.icon}
-                    </a>
-                  </Tooltip>
-                ))}
-              </Slider>
-            </>
-          ))}
+          <Slider className="tech-stack" {...settings}>
+            {techStackData?.map((i) => (
+              <Tooltip openDelay={550} label={i?.name}>
+                <a target="blank" href={i?.url}>
+                  {i?.icon}
+                </a>
+              </Tooltip>
+            ))}
+          </Slider>
         </Flex>
       </Flex>
     </Center>
