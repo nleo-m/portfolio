@@ -15,7 +15,7 @@
   "professional": "Profissional",
   "academic": "Acadêmica",
   "complementary": "Complementar",
-  "full_dev": "programador full-stack",
+  "full_dev": "desenvolvedor full-stack",
   "ux_designer": "UX/UI designer",
   "cybersec_enthusiast": "entusiasta de cybersegurança",
   "artist_designer": "artista e designer",
@@ -62,5 +62,7 @@
   "see_more": "Ver mais",
   "seen_all": "Entre outras coisas",
   "tech_stack": "Linguagens e Tecnologias que utilizo ou já trabalhei",
-  "tools_stack": "Ferramentas e plataformas que utilizo ou já utilizei"
+  "tools_stack": "Ferramentas e plataformas que utilizo ou já utilizei",
+
+  "present": "presente"
 }
