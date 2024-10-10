@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  color: "green",
+  color: localStorage.getItem("@mfjl-color") || "green",
 };
 
 export const themeSlice = createSlice({
@@ -9,7 +9,9 @@ export const themeSlice = createSlice({
   initialState,
   reducers: {
     hackThePlanet: (state) => {
-      state.color = state.color === "green" ? "red" : "green";
+      const color = state.color === "green" ? "red" : "green";
+      state.color = color;
+      localStorage.setItem("@mfjl-color", color);
     },
   },
 });
