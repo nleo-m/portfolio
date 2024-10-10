@@ -26,7 +26,7 @@ export default function ExperienceSection() {
   return (
     <Center mt="100px">
       <Flex direction="column" w="80%">
-        <SectionTitle align="end">Experiência</SectionTitle>
+        <SectionTitle align="end">{t("title_experience")}</SectionTitle>
 
         <CustomTabs
           data={[

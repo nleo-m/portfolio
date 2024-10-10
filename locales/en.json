@@ -6,12 +6,8 @@
   "class": "Class",
   "human": "Human",
   "about": "About",
-  "journey": "Journey",
-  "projects": "Projects",
   "tech": "Tech",
   "technologies": "Technologies",
-
-  "contact": "Contact",
 
   "my_projects": "Some of my projects",
   "pr_message_board_desc": "Message board mimicking some of common social network features, such as: User registration and access, profile, posts, likes.",
@@ -26,6 +22,10 @@
   "message": "Message",
   "send": "Send",
   "and": "and",
+
+  "title_experience": "Experience",
+  "title_projects": "Projects",
+  "title_contact": "Get in touch :)",
 
   "landing1": "My name is Leonel, I'm passionate about tech and always looking for something new to learn.",
   "landing2": "I work as a full-stack dev for a few years now and during this time I had the opportunity to work with a lot of tech and languages.",
@@ -73,5 +73,12 @@
   "desc_happy": "Creation of material and preparation of programming classes, with a focus on game dev, taught to children and teens.",
   "desc_art": "Seeking to understand the needs of my clients, I applied my knowledge creatively, aiming for innovative and quality deliveries.",
   "desc_expo_art": "Exhibition of some of my paintings in different bars and studios in my city.",
-  "desc_thm_path": "In progress: Complete beginner; SOC1 \n Complete: Introduction to cyber-security; Pre-security"
+  "desc_thm_path": "In progress: Complete beginner; SOC1 \n Complete: Introduction to cyber-security; Pre-security",
+
+  "err_invalid_email": "Please enter a valid email address",
+  "err_subject_length": "Subject must be 255 characters or less",
+  "err_message_length": "Message must be 512 characters or less",
+  "err_required_field": "This field is required",
+  "contact_toast_success": "Sent successfully, I'll get back to you soon!",
+  "contact_toast_error": "Error sending message!"
 }

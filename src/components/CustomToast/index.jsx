@@ -1,10 +1,13 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { CheckCircle, XCircle } from "@phosphor-icons/react";
+import { useTranslation } from "react-i18next";
 
 export default function CustomToast({
   status = "success",
   message = "Enviado com sucesso, te respondo já já!",
 }) {
+  const { t } = useTranslation();
+
   return (
     <Box
       p={4}
@@ -20,7 +23,7 @@ export default function CustomToast({
         ) : (
           <XCircle size={21} weight="fill" />
         )}
-        <Text>{message}</Text>
+        <Text>{t(message)}</Text>
       </Flex>
     </Box>
   );

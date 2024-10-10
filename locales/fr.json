@@ -6,8 +6,6 @@
   "class": "Classe",
   "human": "Humain",
   "about": "À propos",
-  "journey": "Voyage",
-  "projects": "Projets",
   "tech": "Tech",
   "technologies": "Les technologies",
   "contact": "Contact",
@@ -26,6 +24,10 @@
   "send": "Envoyer",
 
   "and": "et",
+
+  "title_experience": "Expérience",
+  "title_projects": "Projets",
+  "title_contact": "Entrer en contact :)",
 
   "landing1": "Je m'appelle Leonel, je suis passionné par la technologie et je cherche toujours à apprendre quelque chose de nouveau.",
   "landing2": "Je travaille en tant que développeur full-stack depuis quelques années et durant cette période j'ai eu l'opportunité de travailler avec différentes technologies.",
@@ -73,5 +75,12 @@
   "desc_happy": "Création de matériel et préparation de cours de programmation, axés sur le développement de jeux, enseignés aux enfants et adolescents.",
   "desc_art": "Cherchant à comprendre les besoins de mes clients, j'ai appliqué mes connaissances de manière créative, en visant des livraisons innovantes et de qualité.",
   "desc_expo_art": "Exposition de certaines de mes peintures dans différents bars et studios de ma ville.",
-  "desc_thm_path": "En cours: Débutant complet; SOC1 \n Complet: Introduction à la cybersécurité; Pré-sécurité"
+  "desc_thm_path": "En cours: Débutant complet; SOC1 \n Complet: Introduction à la cybersécurité; Pré-sécurité",
+
+  "err_invalid_email": "Veuillez saisir un email valide",
+  "err_subject_length": "Le sujet doit comporter au maximum 255 caractères",
+  "err_message_length": "Le message doit contenir au maximum 512 caractères",
+  "err_required_field": "Ce champ est obligatoire",
+  "contact_toast_success": "Envoyé avec succès, je vous répondrai bientôt !",
+  "contact_toast_error": "Erreur d'envoi du message !"
 }
