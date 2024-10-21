@@ -77,7 +77,7 @@ export default function ContactSection() {
           render: () => <CustomToast />,
         });
 
-        // reset();
+        reset();
       })
       .catch((e) => {
         toast({
