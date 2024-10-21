@@ -1,9 +1,9 @@
-import { Button } from "@chakra-ui/react";
+import { Button, Flex, Spinner } from "@chakra-ui/react";
 import { useSelector } from "react-redux";
 
 export default function CustomButton(props) {
   const { color } = useSelector((state) => state.theme);
-  const { children } = props;
+  const { children, isLoading } = props;
 
   return (
     <Button
@@ -15,6 +15,7 @@ export default function CustomButton(props) {
       bg={`main.${color}`}
       transition=".1s ease"
       _hover={{ bg: `main.${color}Light` }}
+      disabled={isLoading}
       {...props}
     >
       {children}
