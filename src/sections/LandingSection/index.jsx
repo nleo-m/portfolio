@@ -21,11 +21,9 @@ export default function LandingSection() {
 
   const occupations = [
     t("full_dev"),
-    t("ux_designer"),
     t("cybersec_enthusiast"),
     t("artist_designer"),
-    t("tattooer"),
-    t("writer_wannabe"),
+    t("ux_designer"),
   ];
 
   const [currentOccupation, setCurrentOccupation] = useState(false);
