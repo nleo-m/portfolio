@@ -18,6 +18,10 @@ import {
   LaravelIcon,
   MySQLIcon,
   NodeIcon,
+  NginxIcon,
+  GCPIcon,
+  ReduxIcon,
+  NextIcon,
   PHPIcon,
   PhotoshopIcon,
   PostgresIcon,
@@ -54,21 +58,6 @@ export const techStackData = [
     url: "https://nodejs.org/en",
   },
   {
-    name: "Javascript",
-    icon: <JavascriptIcon />,
-    url: "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
-  },
-  {
-    name: "HTML5",
-    icon: <HTMLIcon />,
-    url: "https://developer.mozilla.org/pt-BR/docs/Web/HTML",
-  },
-  {
-    name: "CSS3",
-    icon: <CSSIcon />,
-    url: "https://developer.mozilla.org/pt-BR/docs/Web/CSS",
-  },
-  {
     name: "Graphql",
     icon: <GraphQLIcon />,
     url: "https://graphql.org/",
@@ -90,6 +79,61 @@ export const techStackData = [
     url: "https://www.python.org/",
   },
   {
+    name: "Git",
+    icon: <GitIcon />,
+    url: "https://git-scm.com/",
+  },
+  {
+    name: "Docker",
+    icon: <DockerIcon />,
+    url: "https://www.docker.com/",
+  },
+  {
+    name: "PostgreSQL",
+    icon: <PostgresIcon />,
+    url: "https://www.postgresql.org/",
+  },
+  {
+    name: "MySQL",
+    icon: <MySQLIcon />,
+    url: "https://www.mysql.com/",
+  },
+  {
+    name: "Google Cloud Platform",
+    icon: <GCPIcon />,
+    url: "https://cloud.google.com/?hl=pt-BR",
+  },
+  {
+    name: "Nginx",
+    icon: <NginxIcon />,
+    url: "https://nginx.org/en/",
+  },
+  {
+    name: "Redux",
+    icon: <ReduxIcon />,
+    url: "https://redux.js.org/",
+  },
+  {
+    name: "NextJS",
+    icon: <NextIcon />,
+    url: "https://nextjs.org/",
+  },
+  {
+    name: "Javascript",
+    icon: <JavascriptIcon />,
+    url: "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+  },
+  {
+    name: "HTML5",
+    icon: <HTMLIcon />,
+    url: "https://developer.mozilla.org/pt-BR/docs/Web/HTML",
+  },
+  {
+    name: "CSS3",
+    icon: <CSSIcon />,
+    url: "https://developer.mozilla.org/pt-BR/docs/Web/CSS",
+  },
+  {
     name: "Django",
     icon: <DjangoIcon />,
     url: "https://www.djangoproject.com/",
@@ -98,11 +142,6 @@ export const techStackData = [
     name: "C#",
     icon: <CSharpIcon />,
     url: "https://learn.microsoft.com/pt-br/dotnet/csharp/",
-  },
-  {
-    name: "Git",
-    icon: <GitIcon />,
-    url: "https://git-scm.com/",
   },
   {
     name: "JWT",
@@ -123,21 +162,6 @@ export const techStackData = [
     name: "Express Server",
     icon: <ExpressIcon />,
     url: "https://expressjs.com/pt-br/",
-  },
-  {
-    name: "Docker",
-    icon: <DockerIcon />,
-    url: "https://www.docker.com/",
-  },
-  {
-    name: "PostgreSQL",
-    icon: <PostgresIcon />,
-    url: "https://www.postgresql.org/",
-  },
-  {
-    name: "MySQL",
-    icon: <MySQLIcon />,
-    url: "https://www.mysql.com/",
   },
   {
     name: "Postman",
