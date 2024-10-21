@@ -24,6 +24,7 @@ import CustomToast from "@/components/CustomToast";
 import SectionTitle from "@/components/SectionTitle";
 import CustomButton from "@/components/CustomButton";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 export default function ContactSection() {
   const { t } = useTranslation();
@@ -55,9 +56,13 @@ export default function ContactSection() {
     resolver: yupResolver(validationSchema),
   });
 
+  const [loading, setLoading] = useState(false);
+
   const toast = useToast();
 
   const onSubmit = async (data) => {
+    setLoading(true);
+
     await emailjs
       .send(
         import.meta.env.VITE_EMAILJS_SID,
@@ -72,7 +77,7 @@ export default function ContactSection() {
           render: () => <CustomToast />,
         });
 
-        reset();
+        // reset();
       })
       .catch((e) => {
         toast({
@@ -82,7 +87,8 @@ export default function ContactSection() {
             <CustomToast status="error" message="contact_toast_error" />
           ),
         });
-      });
+      })
+      .finally(() => setLoading(false));
   };
 
   return (
@@ -158,7 +164,7 @@ export default function ContactSection() {
               <FormErrorMessage>{t(errors?.body?.message)}</FormErrorMessage>
             </FormControl>
 
-            <CustomButton type="submit" alignSelf="center">
+            <CustomButton type="submit" alignSelf="center" isLoading={loading}>
               {t("send")}
             </CustomButton>
           </Flex>

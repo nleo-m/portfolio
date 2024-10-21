@@ -1,6 +1,7 @@
 import {
   Button,
   Center,
+  Divider,
   Flex,
   Heading,
   Text,
@@ -20,11 +21,9 @@ export default function LandingSection() {
 
   const occupations = [
     t("full_dev"),
-    t("ux_designer"),
     t("cybersec_enthusiast"),
     t("artist_designer"),
-    t("tattooer"),
-    t("writer_wannabe"),
+    t("ux_designer"),
   ];
 
   const [currentOccupation, setCurrentOccupation] = useState(false);
@@ -148,14 +147,19 @@ export default function LandingSection() {
           </Flex>
 
           {!isMobile && (
-            <Text
+            <Flex
+              direction="column"
               position="absolute"
               top="5%"
+              gap="1px"
               right={{ sm: "24px", lg: "-24px" }}
+              textAlign="end"
               color="#B2D5CE"
             >
-              Hack the planet
-            </Text>
+              <Text>Hack the planet</Text>
+              <Divider />
+              <Text fontSize={13}>Click in it</Text>
+            </Flex>
           )}
         </Flex>
       </Flex>
