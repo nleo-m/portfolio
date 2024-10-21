@@ -106,7 +106,7 @@ function PopCode() {
         setLines((prevLines) => [...prevLines, splitCode[currentIndex]]);
         setCurrentIndex((prevIndex) => prevIndex + 1);
       }
-    }, 30);
+    }, 15);
 
     return () => clearInterval(interval);
   }, [currentIndex]);
@@ -153,7 +153,7 @@ export default function Loading() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrPrompt((prev) => prev + 1);
-    }, 500);
+    }, 400);
 
     return () => {
       clearInterval(interval);

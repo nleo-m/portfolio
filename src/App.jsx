@@ -25,37 +25,32 @@ function App() {
   } = useTranslation();
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 2600);
+    setTimeout(() => setLoading(false), 2000);
   }, []);
 
   useEffect(() => {
     changeLanguage(currLang);
   }, [currLang]);
 
-  return (
+  return loading ? (
+    <Loading />
+  ) : (
     <Flex
       as={motion.div}
       direction="column"
       color="white"
       w="100%"
-      transition={0.75}
-      initial={{ opacity: 0, y: 10 }} // Starts off screen
+      transition={1}
+      initial={{ opacity: 0, y: 20 }} // Starts off screen
       animate={{ opacity: 1, y: 0 }}
     >
-      {/* <StatsMonitor /> */}
-      {loading ? (
-        <Loading />
-      ) : (
-        <>
-          <Navbar />
-          <LandingSection />
-          <TechnicalOverviewSection />
-          <ExperienceSection />
-          <ProjectsSection />
-          <ContactSection />
-          <Footer />
-        </>
-      )}
+      <Navbar />
+      <LandingSection />
+      <TechnicalOverviewSection />
+      <ExperienceSection />
+      <ProjectsSection />
+      <ContactSection />
+      <Footer />
     </Flex>
   );
 }
