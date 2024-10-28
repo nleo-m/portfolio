@@ -80,6 +80,8 @@ export default function ContactSection() {
         reset();
       })
       .catch((e) => {
+        console.log(e)
+        
         toast({
           status: "error",
           isClosable: true,
