@@ -73,6 +73,7 @@
   "desc_art": "Seeking to understand the needs of my clients, I applied my knowledge creatively, aiming for innovative and quality deliveries.",
   "desc_expo_art": "Exhibition of some of my paintings in different bars and studios in my city.",
   "desc_thm_path": "In progress: Complete beginner; SOC1 \n Complete: Introduction to cyber-security; Pre-security",
+  "desc_fiap_cybersec": "This FIAP course covers the pillars of cybersecurity and its application to protect systems. Topics include encryption, vulnerability analysis, social engineering, and frameworks for intrusion testing.",
 
   "err_invalid_email": "Please enter a valid email address",
   "err_subject_length": "Subject must be 255 characters or less",

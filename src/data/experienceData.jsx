@@ -109,6 +109,22 @@ export const academicExperienceData = [
 
 export const complementaryExperienceData = [
   {
+    position: "Cybersecurity",
+    institution: "FIAP",
+    endDate: " 12/2024",
+    url: "https://on.fiap.com.br/local/nanocourses/gerar_certificado.php?chave=b14a809e056fe5d61252a5d0748e4311&action=view",
+    description: "desc_fiap_cybersec",
+    tags: [
+      "Hashing",
+      "Cryptography",
+      "TCPDump",
+      "Network analysis",
+      "Threat intelligence",
+      "Cybersecurity fundamentals",
+      "Social engineering",
+    ],
+  },
+  {
     position: "Learning Paths",
     institution: "TryHackMe",
     description: "desc_thm_path",
@@ -123,8 +139,8 @@ export const complementaryExperienceData = [
     ],
   },
   {
-    position: "CTF's TryHackMe",
-    institution: "TryHackMe",
+    position: "CTF's (Capture the flags)",
+    institution: "TryHackMe, Portswigger",
     description: "",
     tags: [
       "Recon",
@@ -137,22 +153,8 @@ export const complementaryExperienceData = [
       "Misconfiguration",
       "Brute-forcing",
       "Wireshark",
-    ],
-  },
-  {
-    position: "CTF's Portswigger Academy",
-    institution: "Portswigger",
-    description: "",
-    tags: [
-      "OWASP Top 10",
       "Burp suite",
-      "SQLi",
-      "XSS",
-      "Broken Access Control",
-      "Path traversal",
-      "Information disclosure",
-      "Flawed business logic",
-      "API testing",
+      "OWASP Top 10",
     ],
   },
   {

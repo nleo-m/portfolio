@@ -73,6 +73,7 @@
   "desc_art": "Buscando entender as necessidades dos meus clientes, aplicava os meus conhecimentos de forma criativa, visando entregas inovadoras e de qualidade.",
   "desc_expo_art": "Exposição de algumas pinturas de minha autoria em diferentes bares e studios da minha cidade.",
   "desc_thm_path": "Em curso: Complete beginner; SOC1 \n Completos: Introduction to cyber-security; Pre-security",
+  "desc_fiap_cybersec": "Esse curso da FIAP aborda os pilares da cibersegurança e sua aplicação para proteger sistemas. Alguns dos tópicos envolvem criptografia, análise de vulnerabilidades, engenharia social e frameworks para testes de intrusão.",
 
   "err_invalid_email": "Por favor, insira um email válido",
   "err_subject_length": "O assunto deve ter no máximo 255 caracteres",

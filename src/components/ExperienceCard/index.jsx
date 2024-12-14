@@ -5,6 +5,7 @@ import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { useSelector } from "react-redux";
 import { capitalizeFirstChar } from "@/utils/capitalizeFirstChar";
+import { Link } from "@phosphor-icons/react/dist/ssr";
 
 const MotionBox = motion(Box);
 
@@ -15,6 +16,7 @@ export default function ExperienceCard({
   tags,
   startDate,
   endDate,
+  url,
   odd = false,
 }) {
   const { t } = useTranslation();
@@ -47,13 +49,21 @@ export default function ExperienceCard({
         direction={{ base: "column", sm: "row" }}
       >
         <Text>{institution}</Text>
+
         <Text fontSize={{ base: 14, sm: 16, md: 18 }} color="gray.200">
-          {startDate} - {t(endDate)}
+          {startDate && `${startDate} ${"-"}`} {t(endDate)}
         </Text>
       </Flex>
-      <Text fontWeight="bold" color={`main.${color}`} fontSize={20}>
-        {capitalizeFirstChar(t(position))}
-      </Text>
+      <Flex gap="12px" align="center">
+        <Text fontWeight="bold" color={`main.${color}`} fontSize={20}>
+          {capitalizeFirstChar(t(position))}
+        </Text>
+        {url && (
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            <Link size={24} />
+          </a>
+        )}
+      </Flex>
       <Text mt="12px" color="gray.100" whiteSpace="pre-line">
         {t(description)}
       </Text>

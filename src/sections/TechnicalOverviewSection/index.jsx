@@ -89,7 +89,7 @@ export default function TechnicalOverviewSection() {
           <Slider className="tech-stack" {...settings}>
             {techStackData?.map((t, i) => (
               <Tooltip key={i} openDelay={550} label={t?.name}>
-                <a target="blank" href={t?.url}>
+                <a target="blank" href={t?.url} rel="noopener noreferrer">
                   {t?.icon}
                 </a>
               </Tooltip>
