@@ -1,5 +1,13 @@
 export const projectsData = [
   {
+    img: "/assets/imgs/lazyos_preview.png",
+    name: "Lazyos",
+    description: "pr_lazyos_desc",
+    tags: ["Python", "Requests", "BeautifulSoup"],
+    repo: "https://github.com/nleo-m/lazy-osubdomain",
+    preview: false,
+  },
+  {
     img: "/assets/imgs/message_board_preview.png",
     name: "Message Board",
     description: "pr_message_board_desc",

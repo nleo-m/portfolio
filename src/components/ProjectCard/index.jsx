@@ -51,7 +51,14 @@ export default function ProjectCard({
       }}
     >
       <CardBody>
-        <Box position="relative" bg="black" h="220px" w="100%" mb="16px">
+        <Box
+          position="relative"
+          bg="black"
+          h="220px"
+          w="100%"
+          mb="16px"
+          borderRadius="lg"
+        >
           <Image
             src={img}
             h="100%"
