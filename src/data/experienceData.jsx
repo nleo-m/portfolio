@@ -135,7 +135,7 @@ export const complementaryExperienceData = [
   {
     position: "Capture the flags & Learning Paths",
     institution: "TryHackMe, Portswigger",
-    description: "",
+    description: "desc_thm_path",
     tags: [
       "Recon",
       "Reverse shell",
