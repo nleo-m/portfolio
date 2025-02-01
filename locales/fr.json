@@ -75,7 +75,7 @@
   "desc_happy": "Création de matériel et préparation de cours de programmation, axés sur le développement de jeux, enseignés aux enfants et adolescents.",
   "desc_art": "Cherchant à comprendre les besoins de mes clients, j'ai appliqué mes connaissances de manière créative, en visant des livraisons innovantes et de qualité.",
   "desc_expo_art": "Exposition de certaines de mes peintures dans différents bars et studios de ma ville.",
-  "desc_thm_path": "En cours: Débutant complet; SOC1 \n Complet: Introduction à la cybersécurité; Pré-sécurité",
+  "desc_thm_path": "Les CTFs sont des défis pratiques où il faut utiliser diverses techniques de cybersécurité pour capturer un \"drapeau\". Les parcours d'apprentissage sont des itinéraires éducatifs composés de leçons et de supports complémentaires.",
   "desc_fiap_cybersec": "Ce cours de la FIAP couvre les piliers de la cybersécurité et son application pour protéger les systèmes. Les sujets incluent le chiffrement, l'analyse des vulnérabilités, l'ingénierie sociale et les frameworks pour les tests d'intrusion.",
 
   "err_invalid_email": "Veuillez saisir un email valide",

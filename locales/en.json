@@ -73,7 +73,7 @@
   "desc_happy": "Creation of material and preparation of programming classes, with a focus on game dev, taught to children and teens.",
   "desc_art": "Seeking to understand the needs of my clients, I applied my knowledge creatively, aiming for innovative and quality deliveries.",
   "desc_expo_art": "Exhibition of some of my paintings in different bars and studios in my city.",
-  "desc_thm_path": "In progress: Complete beginner; SOC1 \n Complete: Introduction to cyber-security; Pre-security",
+  "desc_thm_path": "CTFs are practical challenges where various cybersecurity techniques must be employed to capture a \"flag\". Learning Paths are learning tracks composed of lessons and supporting materials.",
   "desc_fiap_cybersec": "This FIAP course covers the pillars of cybersecurity and its application to protect systems. Topics include encryption, vulnerability analysis, social engineering, and frameworks for intrusion testing.",
 
   "err_invalid_email": "Please enter a valid email address",
