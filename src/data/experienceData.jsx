@@ -1,10 +1,18 @@
 export const professionalExperienceData = [
   {
     position: "full_dev",
+    institution: "WiseData Marketing",
+    // description: "desc_wise",
+    startDate: "01/2025",
+    endDate: "present",
+    tags: ["Laravel", "React", "MySQL", "Git"],
+  },
+  {
+    position: "full_dev",
     institution: "Centro universitário FMU | FIAM",
     description: "desc_fmu",
     startDate: "04/2024",
-    endDate: "present",
+    endDate: "11/2024",
     tags: [
       "React",
       "Next",

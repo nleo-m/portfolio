@@ -30,7 +30,7 @@ export default function ExperienceCard({
       ref={ref}
       display="flex"
       flexDirection="column"
-      bg={odd % 2 === 0 ? "#161616" : "#202020"}
+      bg={odd % 2 === 0 ? "#202020" : "#161616"}
       padding={{ base: ".75em 1em", sm: "1.25em 1.5em" }}
       borderLeft="4px solid"
       borderColor={`terminal.${color}`}
