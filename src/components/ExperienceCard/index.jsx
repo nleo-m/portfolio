@@ -25,6 +25,12 @@ export default function ExperienceCard({
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-75px" });
 
+  const urlRef = useRef(null);
+
+  const urlClick = () => {
+    if (urlRef?.current) urlRef.current?.click();
+  };
+
   return (
     <MotionBox
       ref={ref}
@@ -54,12 +60,19 @@ export default function ExperienceCard({
           {startDate && `${startDate} ${"-"}`} {t(endDate)}
         </Text>
       </Flex>
-      <Flex gap="12px" align="center">
-        <Text fontWeight="bold" color={`main.${color}`} fontSize={20}>
+      <Flex
+        gap="12px"
+        align="center"
+        color={`main.${color}`}
+        cursor={url ? "pointer" : "normal"}
+        _hover={{ textDecoration: url ? "underline" : "none" }}
+        onClick={urlClick}
+      >
+        <Text fontWeight="bold" fontSize={20}>
           {capitalizeFirstChar(t(position))}
         </Text>
         {url && (
-          <a href={url} target="_blank" rel="noopener noreferrer">
+          <a ref={urlRef} href={url} target="_blank" rel="noopener noreferrer">
             <Link size={24} />
           </a>
         )}
