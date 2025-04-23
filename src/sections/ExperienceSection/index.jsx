@@ -30,13 +30,13 @@ export default function ExperienceSection() {
 
         <CustomTabs
           data={[
-            { name: "Profissional", panel: <ExperienceCollection /> },
+            { name: t("professional"), panel: <ExperienceCollection /> },
             {
-              name: "Acadêmica",
+              name: t("academic"),
               panel: <ExperienceCollection type="academic" />,
             },
             {
-              name: "Certificados e complementares",
+              name: t("complementary"),
               panel: <ExperienceCollection type="complementary" />,
             },
           ]}
