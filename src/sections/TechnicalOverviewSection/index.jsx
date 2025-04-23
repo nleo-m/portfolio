@@ -28,12 +28,16 @@ export default function TechnicalOverviewSection() {
   const { t } = useTranslation();
 
   const p = [
+    t("tech0"),
     t("tech1"),
     t("tech2"),
     t("tech3"),
     t("tech4"),
     t("tech5"),
     t("tech6"),
+    t("tech7"),
+    t("tech8"),
+    t("tech9"),
   ];
 
   const settings = {
