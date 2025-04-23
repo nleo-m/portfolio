@@ -2,13 +2,13 @@ export const professionalExperienceData = [
   {
     position: "full_dev",
     institution: "WiseData Marketing",
-    // description: "desc_wise",
+    description: "desc_wisedata",
     startDate: "01/2025",
     endDate: "present",
-    tags: ["Laravel", "React", "MySQL", "Git"],
+    tags: ["Laravel", "React", "MySQL", "Git", "RabbitMQ", "Tailwind"],
   },
   {
-    position: "full_dev",
+    position: "anl_dev",
     institution: "Centro universitário FMU | FIAM",
     description: "desc_fmu",
     startDate: "04/2024",
@@ -20,11 +20,14 @@ export const professionalExperienceData = [
       "Typescript",
       "Prisma",
       "Express",
+      "Fastify",
       "GCP",
       "Git",
       "Nginx",
       "MySQL",
       "MongoDB",
+      "OAuth2",
+      "Azure"
     ],
   },
   {
@@ -45,15 +48,8 @@ export const professionalExperienceData = [
       "Docker",
       "Git",
       "Nginx",
+      "Chakra-ui"
     ],
-  },
-  {
-    position: "comp_tech",
-    institution: "IBX Informática",
-    description: "desc_ibx",
-    startDate: "10/2020",
-    endDate: "12/2020",
-    tags: ["Hardware", "Sistemas operacionais", "Linux", "Windows"],
   },
   {
     position: "sub_teacher",
@@ -72,20 +68,13 @@ export const professionalExperienceData = [
       "Premiere",
       "Photoshop",
       "Blender",
+      "Modelagem 3D",
       "Arte digital",
       "Animação e edição de vídeos",
       "Pintura mídia física",
       "Tatuagem",
     ],
   },
-  // {
-  //   position: "waiter",
-  //   institution: "Sublime espaço gourmet",
-  //   description: "",
-  //   startDate: "12/2017",
-  //   endDate: "01/2018",
-  //   tags: ["Primeiro emprego"],
-  // },
 ];
 
 export const academicExperienceData = [
@@ -105,31 +94,47 @@ export const academicExperienceData = [
     endDate: " 07/2020",
     tags: [],
   },
-  {
-    position: "bi_arts_design",
-    institution: "UFJF",
-    description: "interrupted",
-    startDate: "01/2018",
-    endDate: " 06/2018",
-    tags: [],
-  },
 ];
 
 export const complementaryExperienceData = [
   {
-    position: "Cybersecurity",
+    position: "google_cybersec",
+    institution: "Google",
+    endDate: " 05/2024",
+    // url: "#",
+    description: "desc_google_cybersec",
+    tags: [
+      "SOC",
+      "NIST CSF",
+      "NIST RMF",
+      "OWASP",
+      "CISSP",
+      "CIA Triad",
+      "SIEM/SOAR Tools",
+      "Networks",
+      "Security Hardening",
+      "TCP/IP",
+      "TCPDump",
+      "Python",
+      "SQL",
+      "GNU/Linux",
+      "Blue team"
+    ],
+  },
+  {
+    position: "fiap_cybersec",
     institution: "FIAP",
     endDate: " 12/2024",
     url: "https://on.fiap.com.br/local/nanocourses/gerar_certificado.php?chave=b14a809e056fe5d61252a5d0748e4311&action=view",
     description: "desc_fiap_cybersec",
     tags: [
       "Hashing",
-      "Cryptography",
       "TCPDump",
+      "Network fundamentals",
       "Network analysis",
-      "Threat intelligence",
       "Cybersecurity fundamentals",
       "Social engineering",
+      "Blue team"
     ],
   },
   {
@@ -137,23 +142,24 @@ export const complementaryExperienceData = [
     institution: "TryHackMe, Portswigger",
     description: "desc_thm_path",
     tags: [
-      "Recon",
+      "Pentest",
+      "SOC",
       "Reverse shell",
       "Wireshark",
       "Burp suite",
-      "OWASP Top 10",
-      "Linux",
-      "Enumeration",
-      "Hashing",
+      "Windows",
+      "GNU/Linux",
       "YARA",
       "Threat intelligence",
-      "Network fundamentals",
-      "Cyber defense frameworks",
+      "Networks",
+      "Security frameworks",
+      "Red team",
+      "Blue team",
     ],
   },
   {
     position: "art_expos",
     description:
-      "Exposição de algumas pinturas de minha autoria em diferentes bares e studios da minha cidade",
+      "desc_expo_art",
   },
 ];
