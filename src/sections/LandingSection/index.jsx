@@ -20,10 +20,9 @@ export default function LandingSection() {
   const { color } = useSelector((state) => state.theme);
 
   const occupations = [
-    t("full_dev"),
+    t("full_dev_title"),
     t("cybersec_enthusiast"),
     t("artist_designer"),
-    t("ux_designer"),
   ];
 
   const [currentOccupation, setCurrentOccupation] = useState(false);
@@ -99,7 +98,7 @@ export default function LandingSection() {
             <a
               href="https://tryhackme.com/p/ov33r"
               _target="blank"
-              style={{ color: "#007bff" }}
+              style={{ color: "#E60738" }}
             >
               TryHackMe
             </a>{" "}
@@ -107,7 +106,7 @@ export default function LandingSection() {
             <a
               href="https://portswigger.net/"
               _target="blank"
-              style={{ color: "orange" }}
+              style={{ color: "#FF862E" }}
             >
               Portswigger
             </a>
