@@ -20,6 +20,7 @@ export const professionalExperienceData = [
       "Typescript",
       "Prisma",
       "Express",
+      "Fastify",
       "GCP",
       "Git",
       "Nginx",
