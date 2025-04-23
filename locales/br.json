@@ -76,6 +76,9 @@
   "desc_expo_art": "Exposição de algumas pinturas de minha autoria em diferentes bares e studios da minha cidade.",
   "desc_thm_path": "CTFs são desafios práticos onde se deve empregar diversas técnicas de segurança cibernética para capturar uma \"bandeira\". Learning Paths são caminhos de aprendizado composto por aulas e materiais auxiliares. ",
   "desc_fiap_cybersec": "Esse curso da FIAP aborda os pilares da cibersegurança e sua aplicação para proteger sistemas. Alguns dos tópicos envolvem criptografia, análise de vulnerabilidades, engenharia social e frameworks para testes de intrusão.",
+  "fiap_cybersec": "Certificado Cybersecurity",
+  "google_cybersec": "Certificado Profissional de Segurança Cibernética",
+  "desc_google_cybersec": "Esta certificação é composta de oito cursos, que abordam diversos tópicos, como: conceitos essenciais da cibersegurança; frameworks e boas práticas, CISSP, NIST CSF, OWASP; Detecção de ameaças, ferramentas SIEM e SOAR; responder a incidentes de segurança; identificação de vulnerabilidades; hardening; automatização de tarefas e análise de dados com Python e MySQL; ambientes GNU/Linux.",
 
   "err_invalid_email": "Por favor, insira um email válido",
   "err_subject_length": "O assunto deve ter no máximo 255 caracteres",

@@ -76,6 +76,9 @@
   "desc_expo_art": "Exhibition of some of my paintings in different bars and studios in my city.",
   "desc_thm_path": "CTFs are practical challenges where various cybersecurity techniques must be employed to capture a \"flag\". Learning Paths are learning tracks composed of lessons and supporting materials.",
   "desc_fiap_cybersec": "This FIAP course covers the pillars of cybersecurity and its application to protect systems. Topics include encryption, vulnerability analysis, social engineering, and frameworks for intrusion testing.",
+  "fiap_cybersec": "Cybersecurity Certification",
+  "google_cybersec": "Cyber ​​Security Professional Certification",
+  "desc_google_cybersec": "This certification is made up of eight courses, which cover various topics, such as: essential cybersecurity concepts; frameworks and best practices, CISSP, NIST CSF, OWASP; Threat detection, SIEM and SOAR tools; responding to security incidents; identifying vulnerabilities; hardening; automating tasks and analyzing data with Python and MySQL; GNU/Linux environments.",
 
   "err_invalid_email": "Please enter a valid email address",
   "err_subject_length": "Subject must be 255 characters or less",

@@ -78,6 +78,9 @@
   "desc_expo_art": "Exposition de certaines de mes peintures dans différents bars et studios de ma ville.",
   "desc_thm_path": "Les CTFs sont des défis pratiques où il faut utiliser diverses techniques de cybersécurité pour capturer un \"drapeau\". Les parcours d'apprentissage sont des itinéraires éducatifs composés de leçons et de supports complémentaires.",
   "desc_fiap_cybersec": "Ce cours de la FIAP couvre les piliers de la cybersécurité et son application pour protéger les systèmes. Les sujets incluent le chiffrement, l'analyse des vulnérabilités, l'ingénierie sociale et les frameworks pour les tests d'intrusion.",
+  "fiap_cybersec": "Certification Cybersécurité",
+  "google_cybersec": "Certification professionnelle en cybersécurité",
+  "desc_google_cybersec": "Cette certification est composée de huit cours, qui couvrent divers sujets, tels que : les concepts essentiels de la cybersécurité ; les cadres et les meilleures pratiques, CISSP, NIST CSF, OWASP ; la détection des menaces, les outils SIEM et SOAR ; la réponse aux incidents de sécurité ; l'identification des vulnérabilités ; le renforcement ; l'automatisation des tâches et l'analyse des données avec Python et MySQL ; les environnements GNU/Linux.",
 
   "err_invalid_email": "Veuillez saisir un email valide",
   "err_subject_length": "Le sujet doit comporter au maximum 255 caractères",

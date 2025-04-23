@@ -36,7 +36,7 @@ export default function ExperienceSection() {
               panel: <ExperienceCollection type="academic" />,
             },
             {
-              name: "complementar",
+              name: "Certificados e complementares",
               panel: <ExperienceCollection type="complementary" />,
             },
           ]}
