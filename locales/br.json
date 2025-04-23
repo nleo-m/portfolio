@@ -25,7 +25,7 @@
   "and": "e",
 
   "title_experience": "Experiência",
-  "title_projects": "Projetos",
+  "title_projects": "Projetos pessoais",
   "title_contact": "Entre em contato :)",
 
   "landing1": "Me chamo Leonel, sou apaixonado por tecnologia e estou sempre buscando aprender algo novo.",
@@ -50,7 +50,8 @@
   "professional": "Profissional",
   "academic": "Acadêmica",
   "complementary": "Complementar",
-  "full_dev": "desenvolvedor full-stack",
+  "full_dev": "Desenvolvedor Full Stack PL",
+  "anl_dev": "Analista de TI PL",
   "ux_designer": "UX/UI designer",
   "cybersec_enthusiast": "entusiasta de cybersegurança",
   "artist_designer": "artista e designer",
@@ -69,7 +70,7 @@
   "interrupted": "[Interrompido]",
   "desc_fmu": "Implementação de novas features, resolução de bugs e manutenção do código na corrida pela digitalização da empresa e substituição de sistemas legados.",
   "desc_health": "Além de atuar com desenvolvimento também auxiliava em questões de UI e UX. Durante meu tempo na Health ID pude crescer muito profissionalmente. ",
-  "desc_ibx": "Realizava os reparos necessários, que iam desde uma simples formatação até a troca de peças. O contrato foi encerrado prematuramente devido a complicações da pandemia.",
+  "desc_wisedata": "Desenvolvimento de sistemas web à partir do zero para diversos segmentos.",
   "desc_happy": "Criação do material e preparo das aulas de programação, com enfoque em jogos, ministradas para público infanto-juvenil.",
   "desc_art": "Buscando entender as necessidades dos meus clientes, aplicava os meus conhecimentos de forma criativa, visando entregas inovadoras e de qualidade.",
   "desc_expo_art": "Exposição de algumas pinturas de minha autoria em diferentes bares e studios da minha cidade.",

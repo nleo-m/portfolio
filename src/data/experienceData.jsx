@@ -2,13 +2,13 @@ export const professionalExperienceData = [
   {
     position: "full_dev",
     institution: "WiseData Marketing",
-    // description: "desc_wise",
+    description: "desc_wisedata",
     startDate: "01/2025",
     endDate: "present",
-    tags: ["Laravel", "React", "MySQL", "Git"],
+    tags: ["Laravel", "React", "MySQL", "Git", "RabbitMQ", "Tailwind"],
   },
   {
-    position: "full_dev",
+    position: "anl_dev",
     institution: "Centro universitário FMU | FIAM",
     description: "desc_fmu",
     startDate: "04/2024",
@@ -25,6 +25,8 @@ export const professionalExperienceData = [
       "Nginx",
       "MySQL",
       "MongoDB",
+      "OAuth2",
+      "Azure"
     ],
   },
   {
@@ -45,15 +47,8 @@ export const professionalExperienceData = [
       "Docker",
       "Git",
       "Nginx",
+      "Chakra-ui"
     ],
-  },
-  {
-    position: "comp_tech",
-    institution: "IBX Informática",
-    description: "desc_ibx",
-    startDate: "10/2020",
-    endDate: "12/2020",
-    tags: ["Hardware", "Sistemas operacionais", "Linux", "Windows"],
   },
   {
     position: "sub_teacher",
@@ -78,14 +73,6 @@ export const professionalExperienceData = [
       "Tatuagem",
     ],
   },
-  // {
-  //   position: "waiter",
-  //   institution: "Sublime espaço gourmet",
-  //   description: "",
-  //   startDate: "12/2017",
-  //   endDate: "01/2018",
-  //   tags: ["Primeiro emprego"],
-  // },
 ];
 
 export const academicExperienceData = [

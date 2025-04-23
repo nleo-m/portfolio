@@ -27,7 +27,7 @@
   "and": "et",
 
   "title_experience": "Expérience",
-  "title_projects": "Projets",
+  "title_projects": "Projets personnels",
   "title_contact": "Entrer en contact :)",
 
   "landing1": "Je m'appelle Leonel, je suis passionné par la technologie et je cherche toujours à apprendre quelque chose de nouveau.",
@@ -52,7 +52,8 @@
   "professional": "Professionnel",
   "academic": "Académique",
   "complementary": "Complémentaire",
-  "full_dev": "Développeur full-stack",
+  "anl_dev": "Analyste Informatique de niveau Intermédiaire",
+  "full_dev": "Développeur Full Stack Intermédiaire",
   "ux_designer": "Concepteur UX",
   "cybersec_enthusiast": "Passionné de cybersécurité",
   "artist_designer": "Artiste et Designer",
@@ -71,7 +72,7 @@
   "interrupted": "[Interrompu]",
   "desc_fmu": "Mise en œuvre de nouvelles fonctionnalités, corrections de bugs et maintenance du code dans la course à la digitalisation de l'entreprise et au remplacement des systèmes existants.",
   "desc_health": "En plus de travailler sur le développement, j'ai également contribué aux problèmes d'UI et d'UX. Au cours de mon séjour chez Health ID, j'ai pu beaucoup évoluer professionnellement.",
-  "desc_ibx": "J'ai effectué les réparations nécessaires, qui allaient du simple formatage au remplacement de pièces. Le contrat a été résilié prématurément en raison de complications liées à la pandémie.",
+  "desc_wisedata": "Développement de systèmes Web à partir de zéro pour divers segments.",
   "desc_happy": "Création de matériel et préparation de cours de programmation, axés sur le développement de jeux, enseignés aux enfants et adolescents.",
   "desc_art": "Cherchant à comprendre les besoins de mes clients, j'ai appliqué mes connaissances de manière créative, en visant des livraisons innovantes et de qualité.",
   "desc_expo_art": "Exposition de certaines de mes peintures dans différents bars et studios de ma ville.",
