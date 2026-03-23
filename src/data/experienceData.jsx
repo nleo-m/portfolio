@@ -1,5 +1,13 @@
 export const professionalExperienceData = [
   {
+    position: "back_php_dev",
+    institution: "Base.com",
+    description: "desc_base",
+    startDate: "02/2026",
+    endDate: "present",
+    tags: ["PHP", "API Rest", "Docker", "Git"],
+  },
+  {
     position: "full_dev",
     institution: "Clube de Literatura Clássica",
     description: "desc_clc",
@@ -119,7 +127,7 @@ export const complementaryExperienceData = [
     position: "google_cybersec",
     institution: "Google",
     endDate: " 05/2024",
-    // url: "#",
+    url: "https://www.credly.com/badges/6c5b202e-ab9b-46a2-96cd-84e34eb38316/linked_in_profile",
     description: "desc_google_cybersec",
     tags: [
       "SOC",
