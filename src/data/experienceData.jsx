@@ -1,10 +1,36 @@
 export const professionalExperienceData = [
   {
+    position: "back_php_dev",
+    institution: "Base.com",
+    description: "desc_base",
+    startDate: "02/2026",
+    endDate: "present",
+    tags: ["PHP", "API Rest", "Docker", "Git"],
+  },
+  {
+    position: "full_dev",
+    institution: "Clube de Literatura Clássica",
+    description: "desc_clc",
+    startDate: "06/2025",
+    endDate: "02/2026",
+    tags: [
+      "Laravel",
+      "React",
+      "OWASP",
+      "Análise de vulnerabilidades",
+      "Hardening",
+      "Docker",
+      "MySQL",
+      "Postgres",
+      "Git",
+    ],
+  },
+  {
     position: "full_dev",
     institution: "WiseData Marketing",
     description: "desc_wisedata",
     startDate: "01/2025",
-    endDate: "present",
+    endDate: "06/2025",
     tags: ["Laravel", "React", "MySQL", "Git", "RabbitMQ", "Tailwind"],
   },
   {
@@ -27,7 +53,7 @@ export const professionalExperienceData = [
       "MySQL",
       "MongoDB",
       "OAuth2",
-      "Azure"
+      "Azure",
     ],
   },
   {
@@ -48,7 +74,7 @@ export const professionalExperienceData = [
       "Docker",
       "Git",
       "Nginx",
-      "Chakra-ui"
+      "Chakra-ui",
     ],
   },
   {
@@ -101,7 +127,7 @@ export const complementaryExperienceData = [
     position: "google_cybersec",
     institution: "Google",
     endDate: " 05/2024",
-    // url: "#",
+    url: "https://www.credly.com/badges/6c5b202e-ab9b-46a2-96cd-84e34eb38316/linked_in_profile",
     description: "desc_google_cybersec",
     tags: [
       "SOC",
@@ -118,7 +144,7 @@ export const complementaryExperienceData = [
       "Python",
       "SQL",
       "GNU/Linux",
-      "Blue team"
+      "Blue team",
     ],
   },
   {
@@ -134,7 +160,7 @@ export const complementaryExperienceData = [
       "Network analysis",
       "Cybersecurity fundamentals",
       "Social engineering",
-      "Blue team"
+      "Blue team",
     ],
   },
   {
@@ -159,7 +185,6 @@ export const complementaryExperienceData = [
   },
   {
     position: "art_expos",
-    description:
-      "desc_expo_art",
+    description: "desc_expo_art",
   },
 ];
