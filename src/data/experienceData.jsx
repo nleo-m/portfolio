@@ -1,6 +1,6 @@
 export const professionalExperienceData = [
   {
-    position: "back_php_dev",
+    position: "back_dev",
     institution: "Base.com",
     description: "desc_base",
     startDate: "02/2026",
